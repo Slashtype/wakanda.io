@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include head.html %}
+    </head>
+    <body>
+        <div>
+           {% include menu.html %} 
+        </div>
+        <div>
+            {{ content }}
+        </div>
+        <footer class="clear-all">
+            {% include footer.html %}
+        </footer>
+        {% include sync_scripts.html %}
+    </body>
+</html>

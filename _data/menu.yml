@@ -1,0 +1,20 @@
+items:
+
+  - title: What we do
+    url: http://www.wakanda.io/wakanda-platform
+  
+  - title: Pricing
+    url: http://www.wakanda.io/pricing
+
+  - title: Partners
+    url: http://www.wakanda.io/partners-directory
+  
+  - title: Blog
+    url: https://blog.wakanda.io
+    target: _blank
+
+  - title: Get started
+    url: https://wakanda.github.io/wakanda-studio
+
+  - title: Your account
+    url: https://console.wakanda.io

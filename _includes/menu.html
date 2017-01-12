@@ -1,0 +1,9 @@
+<img class="logo" src="img/logo/wakandaio_full_lightBG.png" />
+<ul>
+{% for item in site.data.menu.items %}
+    <li {% if page.url contains item.url %} class="active" {% endif %}>
+        <a href="{{ item.url }}" target="{{ item.target }}">{{ item.title }}</a>
+    </li>
+{% endfor %}
+</ul>
+
