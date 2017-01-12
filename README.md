@@ -1,0 +1,50 @@
+# Wakanda.io
+
+## Contribute
+
+This website is based on [Jekyll](https://jekyllrb.com/). It is hosted on Github Pages.
+
+> **Note:** push your changes to the `gh-pages` branch in order to publish the website on Github Pages. 
+
+### Setup
+
+#### Install Jekyll
+
+```
+$ gem install jekyll
+```
+
+#### Run the website
+
+```
+$ cd wakanda.io
+$ jekyll serve
+```
+> **Note:** Jekyll generates the static site in the `_site` folder.
+
+### Content edition
+
+- to add new entries in the main menu, edit `_data/menu.yml`
+
+### Layout development 
+
+- to update the main menu layout, edit `_includes/menu.html`
+- to update the general layout, edit `_layouts/default.html`
+- to update the Wakanda theme (colors and fonts), edit `css/wakanda.scss`
+
+### Script configuration
+
+- to configure Google Analytics or similar services, edit `_includes/analytics.html`
+- to add synchronous scripts (to be executed after page load), edit `_includes/sync_scripts.html`
+
+> **Note:** once Jekyll is started with `jekyll serve`, it will look for file changes and automatically compile `scss` files to `css`.
+
+### Medias
+
+- find Wakanda logo in different versions in `_img/logo`
+
+### Libraries
+
+The website uses Bootstrap `v4.0.0-alpha.5`.
+
+- to upgrade bootstrap, edit `css/lib/bootstrap/*` files.
