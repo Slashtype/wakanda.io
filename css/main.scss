@@ -44,7 +44,7 @@ section {
  */
 h1,
 h2{
-	color: #5a5a5c;
+	color: $title-color;
 	font-family: 'MyriadProSemibold';
 }
 h1{
@@ -64,7 +64,6 @@ h1{
 	}
 }
 h2{
-	font-family: 'Roboto', sans-serif;
   font-size: 2.8rem;
   font-weight: 100;
   text-align: center;
@@ -108,11 +107,14 @@ h3{
 /**
  * Section Intro
  */
-#section-intro{
+#section-headline{
 	text-align: center;
 
 	.btn{
 		margin-top: 40px;
+	}
+	h2{
+		font-family: 'Roboto', sans-serif;
 	}
 }
 
@@ -207,6 +209,16 @@ h3{
 #section-news{
   background-color: $secondary-color;
   color: $base-dark-bg-color;
+
+  a{
+  	color: $secondary-link-color;
+
+  	&:hover,
+  	&:focus,
+  	&:active{
+  		color: $secondary-link-hover-color;
+  	}
+  }
 
 	h2{
 		color: $base-dark-bg-color;
