@@ -4,7 +4,9 @@
 @import url(lib/bootstrap/bootstrap.min.css);
 @import url(wakanda.scss);
 
+
 html {
+	font-family: 'Open Sans', sans-serif;
   min-height: 100%;
   text-align: center;
 }
@@ -15,5 +17,114 @@ html {
 
 section {
   min-height: 200px;
-  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
+
+/**
+ * Titles
+ */
+h1,
+h2{
+	font-family: 'Raleway', sans-serif;
+}
+h1{
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-align: center;
+
+	+ hr{
+	  border-color: #454545 #454545 -moz-use-text-color;
+	  border-image: none;
+	  border-style: solid solid none;
+	  border-width: 1px 1px 0;
+	  box-sizing: content-box;
+	  margin: 0 auto 30px;
+	  height: 0;
+	  width: 96px;
+	}
+}
+
+/**
+ * Buttons
+ */
+.btn-primary{
+	background-color: $btn-default-bg;
+	border-color:  $btn-default-bg;
+	color: $btn-default-color;
+
+	&:hover,
+	&:focus,
+	&:active{
+		background-color: $btn-primary-bg;
+		border-color:  $btn-primary-bg;
+	}
+}
+
+/**
+ * Mailing list
+ */
+#section-mailing{
+	margin-top:55px;
+	background: $dark-bg;
+	padding-bottom:50px;
+	position:relative;
+
+	h1{
+		color: $base-dark-bg-color;
+
+		+ hr{
+		  border-color: $base-dark-bg-color $base-dark-bg-color -moz-use-text-color;
+		}
+	}
+}
+.mailing{
+	margin-bottom: 1rem;
+
+	input{
+		color: #c3c3c3;
+		text-align: center;
+	}
+	form{
+		margin-left: 20%;
+	}
+	#ml-name{
+		background: #fff url("../img/nl-shadow.png") repeat-y right top;
+		border: none;
+		border-right: 2px solid $input-bd;
+		border-radius: 4px 0 0 4px;
+		padding-left: 10px;
+		height: 48px;
+		width: 32%;
+	}
+	#ml-email{
+		background-color: $input-bg;
+		border: none;
+		border-radius: 0;
+		margin-left: -5px;
+		padding-left: 10px;
+		height: 48px;
+		width: 30%;
+	}
+	#ml-go{
+		background: $btn-primary-bg;
+		border: none;
+		border-radius: 0 4px 4px 0;
+		color: $btn-primary-color;
+		font-weight: 700;
+		font-size: 2rem;
+		line-height: 48px;
+		margin-left: -5px;
+		position: relative;
+			top: -6px;
+		text-shadow: -1px 1px 0px #c5c5c5;
+		height: 48px;
+		width: 50px;
+	}
+}
+
+
+
+/**
+ * Parallax section
+ */
