@@ -1,6 +1,7 @@
 $link-color: #188CBA;
 $link-hover-color: #2fb0e3;
 
+$base-color: #212121;
 $main-color: #FFC600;
 $secondary-color: #EC5C09;
 $variant-color: #E93434;
@@ -12,7 +13,7 @@ $light-bg-color: #8a8b8c;
 $lighter-bg: #f0f2f3;
 $highlighted-bg: #00D5AC;
 $highlighted-bg-color: #fff;
-$footer-bg: #646161;
+$footer-bg: #232A33;
 $footer-color: #fff;
 
 $base-dark-bg-color: #fff;
@@ -22,14 +23,17 @@ $base-light-bg-color: #212121;
 $secondary-light-bg-color: #555555;
 
 $btn-default-bg: #ffc600;
-$btn-default-hover-bg: #232A33;
+$btn-default-hover-bg: #fbbd00;
+//$btn-default-hover-bg: #232A33;
 $btn-default-color: #fff;
 
 $btn-primary-bg: #00D5AC;
-$btn-primary-hover-bg: transparent;
-$btn-primary-hover-dark-bd: #212121;
-$btn-primary-hover-light-bd: #DCDCDC;
 $btn-primary-color: #fff;
+
+$btn-secondary-bg: transparent;
+$btn-secondary-dark-bd: #212121;
+$btn-secondary-light-bd: #DCDCDC;
+$btn-secondary-lighter-bd: #fff;
 
 $input-bg: #fff;
 $input-bd: #ebebeb;

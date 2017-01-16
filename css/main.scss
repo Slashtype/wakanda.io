@@ -13,9 +13,11 @@
 }
 
 html{
-	font-family: 'Roboto', sans-serif;
   min-height: 100%;
-  text-align: center;
+}
+body{
+	color: $base-color;
+	font-family: 'Roboto', sans-serif;
 }
 a{
 	color: $link-color;
@@ -62,8 +64,21 @@ h1{
 	}
 }
 h2{
+	font-family: 'Roboto', sans-serif;
   font-size: 2.8rem;
+  font-weight: 100;
   text-align: center;
+
+	+ hr{
+	  border-color: #454545 #454545 -moz-use-text-color;
+	  border-image: none;
+	  border-style: solid solid none;
+	  border-width: 1px 1px 0;
+	  box-sizing: content-box;
+	  margin: 0 auto 30px;
+	  height: 0;
+	  width: 96px;
+	}
 }
 h3{
   font-size: 1.5rem;
@@ -84,8 +99,20 @@ h3{
 	&:hover,
 	&:focus,
 	&:active{
-		background-color: $btn-primary-bg;
-		border-color:  $btn-primary-bg;
+		background-color: $btn-default-hover-bg;
+		border-color:  $btn-default-hover-bg;
+	}
+}
+
+
+/**
+ * Section Intro
+ */
+#section-intro{
+	text-align: center;
+
+	.btn{
+		margin-top: 40px;
 	}
 }
 
@@ -98,7 +125,7 @@ h3{
 	padding-bottom: 50px;
 	position: relative;
 
-	h1{
+	h2{
 		color: $highlighted-bg-color;
 
 		+ hr{
@@ -115,6 +142,7 @@ h3{
 	}
 	form{
 		margin-left: 20%;
+		text-align: center;
 	}
 	#ml-name{
 		background: #fff url("../img/nl-shadow.png") repeat-y right top;
@@ -135,18 +163,18 @@ h3{
 		width: 30%;
 	}
 	#ml-go{
-		background: $main-color;
-		border: none;
+		background: $btn-secondary-bg;
+		border: 1px solid $btn-secondary-lighter-bd;
 		border-radius: 0 4px 4px 0;
 		color: $btn-primary-color;
-		font-weight: 700;
 		font-size: 1.2rem;
 		line-height: 48px;
 		margin-left: -5px;
+		padding-left: 10px;
+		padding-right: 10px;
 		position: relative;
 			top: 2px;
 		height: 48px;
-		width: 50px;
 	}
 }
 
@@ -155,7 +183,6 @@ h3{
  */
 #section-slideshow{
     background-color: $light-bg;
-    color: $light-bg-color;
 }
 
 /**
@@ -164,20 +191,38 @@ h3{
 #section-features2{
     background-color: $lighter-bg;
 }
+.what-we-do-features{
+	text-align: center;
+}
+
+/**
+ * Section Download
+ */
+#section-download{
+	text-align: center;
+}
 
 /**
  * Section What's new
  */
 #section-news{
-    background-color: $light-bg;
-    color: $light-bg-color;
+  background-color: $secondary-color;
+  color: $base-dark-bg-color;
+
+	h2{
+		color: $base-dark-bg-color;
+
+		+ hr{
+		  border-color: $base-dark-bg-color $base-dark-bg-color -moz-use-text-color;
+		}
+	}
 }
 
 /**
  * Section Events
  */
 #section-events{
-    background-color: $lighter-bg;
+  background-color: $lighter-bg;
 }
 
 
