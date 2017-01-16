@@ -4,6 +4,13 @@
 @import url(lib/bootstrap/bootstrap.min.css);
 @import "base";
 
+@font-face{
+  font-family: 'MyriadProSemibold';
+  src: 	url("../font/MyriadProSemibold.eot");
+  src: 	local("MyriadProSemibold"),
+  			url("../font/MyriadProSemibold.woff") format("woff"),
+  			url("../font/MyriadProSemibold.ttf") format("truetype");
+}
 
 html{
 	font-family: 'Roboto', sans-serif;
@@ -36,7 +43,7 @@ section {
 h1,
 h2{
 	color: #5a5a5c;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'MyriadProSemibold';
 }
 h1{
   font-size: 3rem;
