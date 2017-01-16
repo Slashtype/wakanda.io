@@ -10,11 +10,20 @@ html {
   min-height: 100%;
   text-align: center;
 }
+a{
+	color: $link-color;
+	transition: all 200ms linear 0s;
 
+	&:hover,
+	&:focus,
+	&:active{
+		color: $link-hover-color;
+		text-decoration: none;
+	}
+}
 .logo {
   max-width: 200px;
 }
-
 section {
   min-height: 200px;
   padding-top: 50px;
@@ -26,6 +35,7 @@ section {
  */
 h1,
 h2{
+	color: #5a5a5c;
 	font-family: 'Raleway', sans-serif;
 }
 h1{
@@ -48,6 +58,9 @@ h1{
 /**
  * Buttons
  */
+.btn{
+	transition: all 200ms linear 0s;
+}
 .btn-primary{
 	background-color: $btn-default-bg;
 	border-color:  $btn-default-bg;
@@ -62,19 +75,19 @@ h1{
 }
 
 /**
- * Mailing list
+ * Section Mailing list
  */
 #section-mailing{
-	margin-top:55px;
-	background: $dark-bg;
-	padding-bottom:50px;
-	position:relative;
+	background: $highlighted-bg;
+	color: $highlighted-bg-color;
+	padding-bottom: 50px;
+	position: relative;
 
 	h1{
-		color: $base-dark-bg-color;
+		color: $highlighted-bg-color;
 
 		+ hr{
-		  border-color: $base-dark-bg-color $base-dark-bg-color -moz-use-text-color;
+		  border-color: $highlighted-bg-color $highlighted-bg-color -moz-use-text-color;
 		}
 	}
 }
@@ -107,24 +120,61 @@ h1{
 		width: 30%;
 	}
 	#ml-go{
-		background: $btn-primary-bg;
+		background: $main-color;
 		border: none;
 		border-radius: 0 4px 4px 0;
 		color: $btn-primary-color;
 		font-weight: 700;
-		font-size: 2rem;
+		font-size: 1.4rem;
 		line-height: 48px;
 		margin-left: -5px;
 		position: relative;
-			top: -6px;
-		text-shadow: -1px 1px 0px #c5c5c5;
+			top: 3px;
 		height: 48px;
 		width: 50px;
 	}
 }
 
+/**
+ * Section Slideshow
+ */
+#section-slideshow{
+    background-color: $light-bg;
+    color: $light-bg-color;
+}
+
+/**
+ * Section Features
+ */
+#section-features2{
+    background-color: $lighter-bg;
+}
+
+/**
+ * Section What's new
+ */
+#section-news{
+    background-color: $light-bg;
+    color: $light-bg-color;
+}
+
+/**
+ * Section Events
+ */
+#section-events{
+    background-color: $lighter-bg;
+}
 
 
 /**
  * Parallax section
  */
+
+
+/**
+ * Footer
+ */
+#footer{
+	background-color: $footer-bg;
+	color: $footer-color;
+}

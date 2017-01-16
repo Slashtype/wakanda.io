@@ -1,13 +1,34 @@
+$link-color: #188CBA;
+$link-hover-color: #2fb0e3;
+
+$main-color: #FFC600;
+$secondary-color: #EC5C09;
+$variant-color: #E93434;
+$highlighted-color: #00D5AC;
+
 $dark-bg: #232A33;
 $light-bg: #f0f4f7;
+$light-bg-color: #8a8b8c;
+$lighter-bg: #f0f2f3;
+$highlighted-bg: #00D5AC;
+$highlighted-bg-color: #fff;
+$footer-bg: #646161;
+$footer-color: #fff;
 
 $base-dark-bg-color: #fff;
-$light-dark-bg-color: #859bb7;
+$secondary-dark-bg-color: #859bb7;
+
+$base-light-bg-color: #212121;
+$secondary-light-bg-color: #555555;
 
 $btn-default-bg: #ffc600;
+$btn-default-hover-bg: #232A33;
 $btn-default-color: #fff;
 
-$btn-primary-bg: #ec5c09;
+$btn-primary-bg: #00D5AC;
+$btn-primary-hover-bg: transparent;
+$btn-primary-hover-dark-bd: #212121;
+$btn-primary-hover-light-bd: #DCDCDC;
 $btn-primary-color: #fff;
 
 $input-bg: #fff;
