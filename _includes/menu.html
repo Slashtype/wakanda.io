@@ -1,9 +1,30 @@
-<img class="logo" src="img/logo/wakandaio_full_lightBG.png" />
-<ul>
-{% for item in site.data.menu.items %}
-    <li {% if page.url contains item.url %} class="active" {% endif %}>
-        <a href="{{ item.url }}" target="{{ item.target }}">{{ item.title }}</a>
-    </li>
-{% endfor %}
-</ul>
-
+<div class="container">
+	<nav class="main-nav" role="navigation">
+	  <a class="logo" href="">
+	    <img src="img/logo/wakandaio_full_lightBG.png" />
+	  </a>
+	  <ul>
+			{% for item in site.data.menu.items %}
+		    <li class="hidden-xs-down" {% if page.url contains item.url %} class="active" {% endif %}>
+		        <a href="{{ item.url }}" target="{{ item.target }}">{{ item.title }}</a>
+		    </li>
+			{% endfor %}
+			<li class="hidden-sm-up">
+			  <a class="mobile-nav-trigger icon" href="#mobile-nav">Menu</a>
+			</li>
+	  </ul>
+	</nav>
+</div>
+<nav id="mobile-nav" class="mobile-main-nav" role="navigation">
+  <a class="logo" href="">
+  	<img src="img/logo/wakandaio_full_darkBG.png" />
+  </a>
+  <a href="#close" class="close-main-nav">X</a>
+  <ul>
+		{% for item in site.data.menu.items %}
+	    <li {% if page.url contains item.url %} class="active" {% endif %}>
+	        <a href="{{ item.url }}" target="{{ item.target }}">{{ item.title }}</a>
+	    </li>
+		{% endfor %}
+  </ul>
+</nav>

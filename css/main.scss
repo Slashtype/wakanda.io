@@ -30,6 +30,11 @@ a{
 		text-decoration: none;
 	}
 }
+.img-responsive{
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
 .logo {
   max-width: 200px;
 }
@@ -52,6 +57,9 @@ h1{
   margin-bottom: 30px;
   text-align: center;
 
+	@media(max-width: 640px){
+    font-size: 2rem;
+	}
 	+ hr{
 	  border-color: #454545 #454545 -moz-use-text-color;
 	  border-image: none;
@@ -68,6 +76,9 @@ h2{
   font-weight: 100;
   text-align: center;
 
+	@media(max-width: 640px){
+    font-size: 1.8rem;
+	}
 	+ hr{
 	  border-color: #454545 #454545 -moz-use-text-color;
 	  border-image: none;
@@ -103,7 +114,6 @@ h3{
 	}
 }
 
-
 /**
  * Section Intro
  */
@@ -122,16 +132,17 @@ h3{
  * Section Mailing list
  */
 #section-mailing{
-	background: $highlighted-bg;
-	color: $highlighted-bg-color;
+	//background: $highlighted-bg;
+	//color: $highlighted-bg-color;
+	background-color: $light-bg;
 	padding-bottom: 50px;
 	position: relative;
 
 	h2{
-		color: $highlighted-bg-color;
+		//color: $highlighted-bg-color;
 
 		+ hr{
-		  border-color: $highlighted-bg-color $highlighted-bg-color -moz-use-text-color;
+		  //border-color: $highlighted-bg-color $highlighted-bg-color -moz-use-text-color;
 		}
 	}
 }
@@ -148,6 +159,10 @@ h3{
     position: relative;
     text-align: center;
     width: 60%;
+
+		@media(max-width: 640px){
+    	width: 100%;
+		}
 	}
 	#ml-name{
 		background: #fff url("../img/nl-shadow.png") repeat-y right top;
@@ -157,6 +172,11 @@ h3{
 		padding-left: 10px;
 		height: 48px;
 		width: 68%;
+
+		@media(max-width: 640px){
+	    margin-right: 30%;
+	    width: 65%;
+		}
 	}
 	#ml-email{
 		background-color: $input-bg;
@@ -188,14 +208,17 @@ h3{
  * Section Slideshow
  */
 #section-slideshow{
-    background-color: $light-bg;
+
 }
 
 /**
  * Section Features
  */
-#section-features2{
+#section-features1{
     background-color: $lighter-bg;
+}
+#section-features2{
+
 }
 .what-we-do-features{
 	text-align: center;
@@ -205,33 +228,19 @@ h3{
  * Section Download
  */
 #section-download{
+  background-color: $light-bg;
 	text-align: center;
+
+	.img-responsive{
+		margin: 0 auto;
+	}
 }
 
 /**
  * Section What's new
  */
 #section-news{
-  background-color: $secondary-color;
-  color: $base-dark-bg-color;
 
-  a{
-  	color: $secondary-link-color;
-
-  	&:hover,
-  	&:focus,
-  	&:active{
-  		color: $secondary-link-hover-color;
-  	}
-  }
-
-	h2{
-		color: $base-dark-bg-color;
-
-		+ hr{
-		  border-color: $base-dark-bg-color $base-dark-bg-color -moz-use-text-color;
-		}
-	}
 }
 
 /**
@@ -253,4 +262,100 @@ h3{
 #footer{
 	background-color: $footer-bg;
 	color: $footer-color;
+	font-size: 0.82rem;
+	overflow: hidden;
+	padding: 20px 0;
+
+	@media (max-width: 640px){
+		padding: 3px 0;
+	}
+
+	a{
+		color: $footer-color;
+
+		&:hover,
+		&:focus,
+		&:active{
+			color: $main-color;
+		}
+	}
+	h3{
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0 0 15px;
+    text-align: left;
+    text-transform: uppercase;
+
+  	@media (max-width: 640px){
+  		margin: 0;
+  	}		
+	}
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	.footer-logo{
+		float: left;
+		max-width: 75px;
+	}
+  .footer-social-links{
+		float: left;
+		list-style-type: none;
+		margin: 0 0 0 30px;
+		padding: 0;
+
+		@media (max-width: 640px){
+			margin-bottom: 20px;
+		}
+  }
+
+  @media (max-width: 640px){
+		#accordion{
+
+			> .card{
+		    background-color: transparent;
+		    border-bottom: 1px solid #fff;
+		    border-radius: 0;
+		  }
+			.card-header{
+		    background-color: transparent;
+		    border-bottom: none;
+		    margin-bottom: 0;
+		    padding: 0;
+
+		    h3{
+		    	padding: 0.75rem 1.25rem;
+		    }
+			}
+			.card-block{
+
+				h3.hidden-xs-down + ul{
+					margin-left: 20px;
+				}
+			}
+		}
+	}
+  @media (min-width: 768px){
+
+		#accordion{
+			margin: 0 auto;
+	    max-width: 100%;
+	    width: 1140px;
+
+			> .card{
+		    background-color: transparent;
+		    border: none;
+		    border-radius: 0;
+		    float: left;
+		    width: 20%;
+			}
+			.card-header{
+				display: none;
+			}
+			.collapse{
+    		display: block;
+			}
+		}
+  }
 }
