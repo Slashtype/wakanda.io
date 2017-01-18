@@ -134,17 +134,17 @@ h3{
  * Section Slideshow
  */
 #section-slideshow{
-	background-color: $light-bg;
+
 }
 
 /**
  * Section Features
  */
 #section-features1{
-
+  background-color: $lighter-bg;
 }
 #section-features2{
-    background-color: $lighter-bg;
+
 }
 .what-we-do-features{
 	text-align: center;
@@ -154,6 +154,7 @@ h3{
  * Section Download
  */
 #section-download{
+    background-color: $light-bg;
 	text-align: center;
 
 	.img-responsive{
@@ -165,13 +166,14 @@ h3{
  * Section What's new
  */
 #section-news{
-	background-color: $light-bg;  
+ 
 }
 
 /**
  * Section Community
  */
 #section-mailing{
+	background-color: $lighter-bg; 
 	padding-bottom: 50px;
 	position: relative;
 }
@@ -237,14 +239,14 @@ h3{
  * Section Events
  */
 #section-events{
-	background-color: $lighter-bg;
+
 }
 
 /**
  * Section Customers
  */
 #section-customers{
-
+	background-color: $light-bg;
 }
 
 /**
@@ -262,7 +264,7 @@ h3{
 	overflow: hidden;
 	padding: 1rem 0 0;
 
-	@media (max-width: 640px){
+	@media (max-width: 768px){
 		background-color: #fff;
 		color: $base-light-bg-color;
 		padding: 3px 0;
@@ -305,7 +307,7 @@ h3{
     }
 	}
 	.card-block{
-    padding: 0.5rem 1.25rem 1rem;
+    padding: 0.5rem 0 1rem;
 	}
 	.secondary-footer{
     background-color: $secondary-footer-bg;
@@ -315,7 +317,7 @@ h3{
     min-height: 3.125rem;
     overflow: hidden;
 
-		@media (max-width: 640px){
+		@media (max-width: 768px){
     	background-color: $secondary-footer-mb-bg;
     	margin-top: 0;
     }
@@ -338,6 +340,9 @@ h3{
 		@media (max-width: 640px){
     	margin-top: 20px;
     }
+		@media (min-width: 992px){
+    	margin-right: 70px;
+    }
 
 		> li{
 			display: inline-block;
@@ -357,7 +362,12 @@ h3{
 		}
   }
 
-  @media (max-width: 640px){
+  @media (max-width: 767px){
+
+  	.container-accordion{
+			padding-right: 0;
+			padding-left: 0;
+  	}
 		#accordion{
 
 			> .card{
