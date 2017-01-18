@@ -228,7 +228,7 @@ h3{
  * Section Download
  */
 #section-download{
-  background-color: $light-bg;
+	background-color: $light-bg;  
 	text-align: center;
 
 	.img-responsive{
@@ -244,12 +244,25 @@ h3{
 }
 
 /**
- * Section Events
+ * Section Community
  */
-#section-events{
+#section-community{
   background-color: $lighter-bg;
 }
 
+/**
+ * Section Events
+ */
+#section-events{
+
+}
+
+/**
+ * Section Customers
+ */
+#section-customers{
+	background-color: $light-bg;
+}
 
 /**
  * Parallax section
@@ -267,11 +280,17 @@ h3{
 	padding: 20px 0;
 
 	@media (max-width: 640px){
+		background-color: #fff;
+		color: $base-light-bg-color;
 		padding: 3px 0;
 	}
 
 	a{
 		color: $footer-color;
+
+		@media (max-width: 640px){
+			color: $base-light-bg-color;
+		}
 
 		&:hover,
 		&:focus,
@@ -315,7 +334,8 @@ h3{
 
 			> .card{
 		    background-color: transparent;
-		    border-bottom: 1px solid #fff;
+		    border: none;
+		    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
 		    border-radius: 0;
 		  }
 			.card-header{
