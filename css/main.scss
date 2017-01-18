@@ -313,25 +313,61 @@ h3{
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
+
+		@media (max-width: 640px){
+    	
+    	> li{
+    		padding: 5px 0;
+    	}
+    }
 	}
-	.footnote{
-    background-color: #363f4b;
+	.card-block{
+    padding: 0.5rem 1.25rem 1rem;
+	}
+	.secondary-footer{
+    background-color: $secondary-footer-bg;
     clear: both;
     height: 3.125rem;
     margin-top: 1rem;
     min-height: 3.125rem;
     overflow: hidden;
+
+		@media (max-width: 640px){
+    	background-color: $secondary-footer-mb-bg;
+    	margin-top: 0;
+    }
 	}
 	.footer-logo{
 		float: left;
 		margin: 12px 0 0;
 		max-width: 28px;
+
+		@media (max-width: 640px){
+    	margin-top: 15px;
+    }
 	}
   .footer-social-links{
 		float: right;
 		list-style-type: none;
-		margin: 0 0 0 30px;
+		margin: 15px 0 0 30px;
 		padding: 0;
+
+		@media (max-width: 640px){
+    	margin-top: 20px;
+    }
+
+		> li{
+			display: inline-block;
+			margin: 0 4px;
+
+			.fa{
+				font-size: 1.2rem;
+			
+				@media (max-width: 640px){
+					color: $secondary-footer-mb-link-color;
+				}
+			}
+		}
 
 		@media (max-width: 640px){
 			margin-bottom: 20px;
