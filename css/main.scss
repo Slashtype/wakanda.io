@@ -277,7 +277,7 @@ h3{
 	color: $footer-color;
 	font-size: 0.82rem;
 	overflow: hidden;
-	padding: 20px 0;
+	padding: 1rem 0 0;
 
 	@media (max-width: 640px){
 		background-color: #fff;
@@ -314,12 +314,21 @@ h3{
 		margin: 0;
 		padding: 0;
 	}
+	.footnote{
+    background-color: #363f4b;
+    clear: both;
+    height: 3.125rem;
+    margin-top: 1rem;
+    min-height: 3.125rem;
+    overflow: hidden;
+	}
 	.footer-logo{
 		float: left;
-		max-width: 75px;
+		margin: 12px 0 0;
+		max-width: 28px;
 	}
   .footer-social-links{
-		float: left;
+		float: right;
 		list-style-type: none;
 		margin: 0 0 0 30px;
 		padding: 0;
