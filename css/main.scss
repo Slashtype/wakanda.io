@@ -128,23 +128,52 @@ h3{
 	}
 }
 
+
+
 /**
- * Section Mailing list
+ * Section Slideshow
+ */
+#section-slideshow{
+	background-color: $light-bg;
+}
+
+/**
+ * Section Features
+ */
+#section-features1{
+
+}
+#section-features2{
+    background-color: $lighter-bg;
+}
+.what-we-do-features{
+	text-align: center;
+}
+
+/**
+ * Section Download
+ */
+#section-download{
+	text-align: center;
+
+	.img-responsive{
+		margin: 0 auto;
+	}
+}
+
+/**
+ * Section What's new
+ */
+#section-news{
+	background-color: $light-bg;  
+}
+
+/**
+ * Section Community
  */
 #section-mailing{
-	//background: $highlighted-bg;
-	//color: $highlighted-bg-color;
-	background-color: $light-bg;
 	padding-bottom: 50px;
 	position: relative;
-
-	h2{
-		//color: $highlighted-bg-color;
-
-		+ hr{
-		  //border-color: $highlighted-bg-color $highlighted-bg-color -moz-use-text-color;
-		}
-	}
 }
 .mailing{
 	margin-bottom: 1rem;
@@ -205,63 +234,17 @@ h3{
 }
 
 /**
- * Section Slideshow
- */
-#section-slideshow{
-
-}
-
-/**
- * Section Features
- */
-#section-features1{
-    background-color: $lighter-bg;
-}
-#section-features2{
-
-}
-.what-we-do-features{
-	text-align: center;
-}
-
-/**
- * Section Download
- */
-#section-download{
-	background-color: $light-bg;  
-	text-align: center;
-
-	.img-responsive{
-		margin: 0 auto;
-	}
-}
-
-/**
- * Section What's new
- */
-#section-news{
-
-}
-
-/**
- * Section Community
- */
-#section-community{
-  background-color: $lighter-bg;
-}
-
-/**
  * Section Events
  */
 #section-events{
-
+	background-color: $lighter-bg;
 }
 
 /**
  * Section Customers
  */
 #section-customers{
-	background-color: $light-bg;
+
 }
 
 /**
