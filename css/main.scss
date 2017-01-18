@@ -286,7 +286,7 @@ h3{
 	}
 
 	a{
-		color: $footer-color;
+		color: $footer-link-color;
 
 		@media (max-width: 640px){
 			color: $base-light-bg-color;
@@ -300,7 +300,7 @@ h3{
 	}
 	h3{
     font-size: 0.9rem;
-    font-weight: 700;
+    font-weight: 400;
     margin: 0 0 15px;
     text-align: left;
     text-transform: uppercase;
