@@ -29,7 +29,17 @@
     li{
       display: inline-block;
 
-      a{
+      &.highlighted-item > a{
+        border-radius: 4px;
+        box-shadow: 0 0 0 1px $btn-vav-color inset;
+        padding: 10px 14px;
+
+        &:hover,
+        &:focus{
+          box-shadow: 0 0 0 1px $main-color inset;
+        }
+      }
+      > a{
         color: $base-color;
         display: inline-block;
         font-size: 0.9375rem;
@@ -46,8 +56,8 @@
 
         &.mobile-nav-trigger{
           border-radius: 4px;
-          box-shadow: 0 0 0 2px #253039 inset;
-          color: #253039;
+          box-shadow: 0 0 0 2px $btn-vav-color inset;
+          color: $btn-vav-color;
           display: inline-block;
           font-size: 12pt;
           line-height: 1em;
