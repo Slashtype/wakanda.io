@@ -16,5 +16,6 @@ items:
   - title: Get started
     url: https://wakanda.github.io/wakanda-studio
 
-  - title: Your account
+  - title: Sign in
     url: https://console.wakanda.io
+    highlighted: true
