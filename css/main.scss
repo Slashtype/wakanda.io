@@ -30,6 +30,9 @@ a{
 		text-decoration: none;
 	}
 }
+.btn{
+	cursor: pointer;
+}
 .img-responsive{
   display: block;
   height: auto;
@@ -122,6 +125,10 @@ h3{
 
 	.btn{
 		margin-top: 40px;
+
+		> .fa{
+			margin-right: 8px;
+		}
 	}
 	h2{
 		font-family: 'Roboto', sans-serif;
@@ -241,6 +248,9 @@ h3{
 	margin: 3.4rem 0 1rem;
 	text-align: center;
 
+	@media(max-width: 640px){
+		margin: 0 0 40px;
+	}
 	input{
 		color: #c3c3c3;
 		text-align: center;
@@ -321,6 +331,15 @@ h3{
       box-shadow: 0 0 0 1px $base-dark-bg-color inset;
     }
   }
+}
+@media(max-width: 1199px){
+
+	.community-text{
+		text-align: center;
+	}
+	.community-link.highlighted-link{
+		margin-top: 20px;
+	}
 }
 
 /**
