@@ -1,0 +1,25 @@
+#strips, #strips span {
+    position: absolute;
+}
+
+#strips {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transform: skewY(-4deg);
+    transform-origin: 0;
+    background: #ffc600;
+    top: 299px;
+    height: 221px;
+}
+
+#strips span {
+    height: 17px;
+}
+
+#strips :nth-child(1) {
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: #fffad6
+}
