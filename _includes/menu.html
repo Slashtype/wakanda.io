@@ -16,10 +16,12 @@
   </nav>
 </div>
 <nav id="mobile-nav" class="mobile-main-nav" role="navigation">
-  <a class="logo" href="">
-    <img src="img/logo/wakandaio_full_darkBG.png" />
-  </a>
-  <a href="#close" class="close-main-nav">&times;</a>
+  <div>
+    <a class="logo" href="">
+      <img src="img/logo/wakandaio_full_darkBG.png" />
+    </a>
+    <a href="#close" class="close-main-nav">&times;</a>
+  </div>
   <ul>
     {% for item in site.data.menu.items %}
       <li {% if item.highlighted %} class="highlighted-item" {% endif %} {% if page.url contains item.url %} class="active" {% endif %}>

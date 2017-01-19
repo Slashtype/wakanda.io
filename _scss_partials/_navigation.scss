@@ -32,21 +32,23 @@
     li{
       display: inline-block;
 
-      &.highlighted-item > a{
-        border-radius: 4px;
-        box-shadow: 0 0 0 1px $btn-vav-color inset;
-        padding: 10px 14px;
+      &.highlighted-item {
+          margin-left: 22px;
+          > a{
+          border-radius: 4px;
+          box-shadow: 0 0 0 1px $btn-vav-color inset;
+          padding: 10px 14px;
 
-        &:hover,
-        &:focus{
-          box-shadow: 0 0 0 1px $main-color inset;
+          &:hover,
+          &:focus{
+            box-shadow: 0 0 0 1px $main-color inset;
+          }
         }
       }
       > a{
         color: $base-color;
         display: inline-block;
         font-size: 0.9375rem;
-        //font-weight: 500;
         font-weight: 300;
         line-height: 1em;
         margin-left: 9px;
@@ -112,16 +114,19 @@
 .mobile-main-nav{
   animation: mobile;
   animation-duration: 0.2s;
-  background: $dark-bg;
-  //background: $main-color;
+  background: $highlighted-item-mobile;
   display: none;
   position: fixed;
-    top: 0;
-    left: 0;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   z-index: 999;
 
+  > div:first-child {
+    height: 85px;
+    background: $dark-bg;
+  }
   .logo{
     float: left;
     margin: 20px 0px 20px 15px;
@@ -150,12 +155,11 @@
   ul{
     clear: both;
     list-style-type: none;
-    margin: 80px 0 0;
     padding: 0;
 
     li{
       padding-left: 45px;
-
+      background: $dark-bg;
       &.highlighted-item{
         background: $highlighted-item-mobile;
       }
