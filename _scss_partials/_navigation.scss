@@ -25,6 +25,7 @@
     float: right;
     list-style-type: none;
     margin: 5px 0 0 0;
+    padding: 0;
 
     @media(min-width: 991px){
       margin-top: 12px;
@@ -73,6 +74,7 @@
           font-size: 12pt;
           font-weight: 500;
           line-height: 1em;
+          margin-top: -10px;
           margin-left: 17px;
           padding: 10px 14px 9px;
           text-decoration: none;
