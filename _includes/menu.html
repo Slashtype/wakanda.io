@@ -1,30 +1,30 @@
 <div class="container">
-	<nav class="main-nav" role="navigation">
-	  <a class="logo" href="">
-	    <img src="img/logo/wakandaio_full_lightBG.png" />
-	  </a>
-	  <ul>
-			{% for item in site.data.menu.items %}
-		    <li class="hidden-sm-down {% if item.highlighted %}highlighted-item{% endif %}" {% if page.url contains item.url %} class="active" {% endif %}>
-		        <a class="{{ item.class }}" href="{{ item.url }}" target="{{ item.target }}">{{ item.title }}</a>
-		    </li>
-			{% endfor %}
-			<li class="hidden-md-up">
-			  <a class="mobile-nav-trigger icon" href="#mobile-nav">Menu</a>
-			</li>
-	  </ul>
-	</nav>
+  <nav class="main-nav" role="navigation">
+    <a class="logo" href="">
+      <img src="img/logo/wakandaio_full_lightBG.png" />
+    </a>
+    <ul>
+      {% for item in site.data.menu.items %}
+        <li class="hidden-sm-down {% if item.highlighted %}highlighted-item{% endif %}" {% if page.url contains item.url %} class="active" {% endif %}>
+            <a class="{{ item.class }}" href="{{ item.url }}" target="{{ item.target }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+      <li class="hidden-md-up">
+        <a class="mobile-nav-trigger icon" href="#mobile-nav">Menu</a>
+      </li>
+    </ul>
+  </nav>
 </div>
 <nav id="mobile-nav" class="mobile-main-nav" role="navigation">
   <a class="logo" href="">
-  	<img src="img/logo/wakandaio_full_darkBG.png" />
+    <img src="img/logo/wakandaio_full_darkBG.png" />
   </a>
   <a href="#close" class="close-main-nav">&times;</a>
   <ul>
-		{% for item in site.data.menu.items %}
-			<li {% if item.highlighted %} class="highlighted-item" {% endif %} {% if page.url contains item.url %} class="active" {% endif %}>
-	        <a href="{{ item.url }}" target="{{ item.target }}">{{ item.title }}</a>
-	    </li>
-		{% endfor %}
+    {% for item in site.data.menu.items %}
+      <li {% if item.highlighted %} class="highlighted-item" {% endif %} {% if page.url contains item.url %} class="active" {% endif %}>
+          <a href="{{ item.url }}" target="{{ item.target }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
   </ul>
 </nav>
