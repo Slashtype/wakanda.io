@@ -337,6 +337,8 @@ h3{
 
   	@media (max-width: 640px){
   		margin: 0;
+		font-weight: 400;
+		font-size: 0.8rem;
   	}		
 	}
 	ul{
@@ -383,7 +385,7 @@ h3{
 		padding: 0;
 
 		@media (max-width: 640px){
-    	margin-top: 20px;
+
     }
 		@media (min-width: 992px){
     	margin-right: 70px;
@@ -418,7 +420,7 @@ h3{
 			> .card{
 		    background-color: transparent;
 		    border: none;
-		    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+		    border-top: 1px solid rgba(0, 0, 0, 0.09);
 		    border-radius: 0;
 		  }
 			.card-header{
@@ -428,7 +430,7 @@ h3{
 		    padding: 0;
 
 		    h3{
-		    	padding: 0.75rem 1.25rem;
+		    	padding: 1rem 1.25rem;
 		    }
 			}
 			.card-block{
