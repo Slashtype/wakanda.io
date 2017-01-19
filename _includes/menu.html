@@ -5,11 +5,11 @@
 	  </a>
 	  <ul>
 			{% for item in site.data.menu.items %}
-		    <li class="hidden-xs-down" {% if page.url contains item.url %} class="active" {% endif %}>
+		    <li class="hidden-sm-down" {% if page.url contains item.url %} class="active" {% endif %}>
 		        <a href="{{ item.url }}" target="{{ item.target }}">{{ item.title }}</a>
 		    </li>
 			{% endfor %}
-			<li class="hidden-sm-up">
+			<li class="hidden-md-up">
 			  <a class="mobile-nav-trigger icon" href="#mobile-nav">Menu</a>
 			</li>
 	  </ul>
