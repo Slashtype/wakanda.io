@@ -187,20 +187,38 @@ layout: default
       <div class="col-md-12">
         <h2>Wakanda Community</h2>
         <hr />
-        <div class="mailing">
-          <form id="mailing-form" name="mailing-form" action="" method="post">
-              <input name="ml-name" id="ml-name" type="text" placeholder="Email Address" />
-              <button type="submit" name="ml-go" id="ml-go">Subscribe</button>
-          </form> 
-        </div>
-        <div class="alert alert-danger" style="display:none">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <span class="icon-warning-sign"></span>  <strong>Error</strong> – Please enter required fields
-        </div>    
-        <div class="alert alert-success" style="display:none">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <span class="icon-flag"></span>  <strong>Success</strong> – Form successfully sent ! 
-        </div>
+
+        <div class="row"> 
+          <div class="col-md-5"> 
+            <div class="mailing">
+              <form id="mailing-form" name="mailing-form" action="" method="post">
+                  <input name="ml-name" id="ml-name" type="text" placeholder="Email Address" />
+                  <button type="submit" name="ml-go" id="ml-go">Subscribe</button>
+              </form> 
+            </div>
+            <div class="alert alert-danger" style="display:none">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <span class="icon-warning-sign"></span>  <strong>Error</strong> – Please enter required fields
+            </div>    
+            <div class="alert alert-success" style="display:none">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <span class="icon-flag"></span>  <strong>Success</strong> – Form successfully sent ! 
+            </div>
+          </div>
+          <div class="col-md-6 offset-md-1">
+            We have a great new community on Gitter 
+            <a class="community-link highlighted-link" href="https://gitter.im/wakandasoft/Lobby">
+              <span class="btn"> Start talking with us</span>
+            </a> 
+            <a class="community-link" href="http://stackoverflow.com/questions/tagged/wakanda">
+              <i class="fa fa-stack-overflow"></i> Ask questions on Stackoverflow
+            </a> 
+            <a class="community-link" href="https://github.com/Wakanda/wakanda-issues/issues">
+              <i class="fa fa-github"></i> Report issues, request new features on Github
+            </a>
+          </div> 
+         </div>
+
       </div>
     </div>
   </div>       
