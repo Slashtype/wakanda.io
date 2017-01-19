@@ -113,6 +113,12 @@ h3{
 		border-color:  $btn-default-hover-bg;
 	}
 }
+.btn-inverted{
+	background-color: $btn-secondary-dark-bd;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
 
 /**
  * Section Intro
