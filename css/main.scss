@@ -85,7 +85,7 @@ h2{
 	  border-style: solid solid none;
 	  border-width: 1px 1px 0;
 	  box-sizing: content-box;
-	  margin: 0 auto 30px;
+	  margin: 0 auto 50px;
 	  height: 0;
 	  width: 96px;
 	}
@@ -167,6 +167,57 @@ h3{
 
 	.img-responsive{
 		margin: 0 auto;
+	}
+	.production-table{
+		border-collapse: separate;
+
+		thead{
+
+			.community{
+		    background: $main-color;
+    		color: $base-dark-bg-color;
+			}
+	    .enterprise{
+		    background: $dark-bg;
+    		color: $base-dark-bg-color;
+    	}
+		}
+		.item-title{
+			text-align: left;
+		}
+		.btn-community{
+			background: $btn-community-bg;
+			color: $btn-community-color;
+
+			&:hover,
+			&:focus,
+			&:active{
+				background: $btn-community-hover-bg;
+			}
+		}
+		.btn-enterprise{
+			background: $btn-enterprise-bg;
+			color: $btn-enterprise-color;
+
+			&:hover,
+			&:focus,
+			&:active{
+				background: $btn-enterprise-hover-bg;
+			}
+		}
+		.action{
+			text-align: center;
+
+			.fa{
+				margin-right: 8px;
+			}
+			> span{
+				display: inline-block;
+				font-size: .9rem;
+				margin-top: 15px;
+				width: 100%;
+			}
+		}
 	}
 }
 
