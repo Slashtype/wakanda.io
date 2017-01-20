@@ -253,6 +253,9 @@ h3{
 			}
 		}
 	}
+	.dropdown-toggle:focus{
+    box-shadow: none;
+	}
 	.dropdown-menu{
 		padding: 0;
 
