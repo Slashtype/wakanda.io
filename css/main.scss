@@ -104,6 +104,27 @@ h3{
 .btn{
 	transition: all 200ms linear 0s;
 }
+.btn-dl{
+	padding-bottom: 18px;
+	position: relative;
+
+	&.btn-primary{
+		padding-bottom: 20px;
+
+		.tiny-text{
+				bottom: 3px;
+		}
+	}
+	.tiny-text{
+		display: inline-block;
+		font-size: 0.7rem;
+		position: absolute;
+			bottom: 1px;
+			right: 0;
+			left: 0;
+		text-align: center;
+	}
+}
 .btn-primary{
 	background-color: $btn-default-bg;
 	border-color:  $btn-default-bg;
@@ -114,6 +135,8 @@ h3{
 	&:active{
 		background-color: $btn-default-hover-bg;
 		border-color:  $btn-default-hover-bg;
+		box-shadow: none;
+		color: $base-dark-bg-color;
 	}
 }
 .btn-inverted{
@@ -141,8 +164,6 @@ h3{
 		font-family: 'Roboto', sans-serif;
 	}
 }
-
-
 
 /**
  * Section Slideshow
@@ -205,6 +226,8 @@ h3{
 		.btn-enterprise{
 			background: $btn-enterprise-bg;
 			color: $btn-enterprise-color;
+			padding-top: 15px;
+			padding-bottom: 15px;
 
 			&:hover,
 			&:focus,
@@ -223,6 +246,39 @@ h3{
 				font-size: .9rem;
 				margin-top: 15px;
 				width: 100%;
+			}
+		}
+	}
+	.dropdown-menu{
+
+		table{
+			
+			thead th.build-header{
+				font-weight: 500;
+			}
+			tbody tr{
+				background-color: transparent;
+
+				&:nth-of-type(2n+1){
+			    background-color: rgba(0, 0, 0, 0.05);
+			  }
+			}
+			td{
+				text-align: center;
+
+				.fa{
+
+					&.stable{
+						color: $btn-primary-bg;
+					}
+					&.preview{
+						color: $base-color;
+					}
+				}
+				&.os{
+					font-weight: 500;
+					text-align: left;
+				}
 			}
 		}
 	}

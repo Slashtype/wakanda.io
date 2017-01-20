@@ -21,9 +21,10 @@ layout: default
             <h2>
               Full-Stack JavaScript Platform
             </h2>
-            <button class="btn btn-lg btn-inverted hidden-xs-down">
-              <span class="fa fa-download"></span> Download
-            </button>
+            <a class="btn btn-lg btn-inverted btn-dl hidden-xs-down js-scrollTo" href="#section-download">
+              <span class="fa fa-download"></span> Download for Mac
+              <span class="tiny-text">Stable v1.0.0</span>
+            </a>
           </div>
         </div>
       </div>
@@ -250,9 +251,44 @@ layout: default
             <tr>
               <td>&nbsp;</td>
               <td class="action">
-                <a class="btn btn-lg btn-community" href="https://wakanda.github.io/" target="_blank">
-                  <span class="fa fa-download"></span> Download Now
-                </a>
+                <div class="dropdown">
+                  <button class="btn btn-lg btn-community btn-dl dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="fa fa-download"></span> Download for Mac
+                    <span class="tiny-text">Stable v1.0.0</span>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <tableS>
+                      <colgroup>
+                        <col span="3">
+                        <col class="insiders-column" span="2">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <td></td>
+                          <th class="build-header" scope="col">Stable</th>
+                          <th class="build-header" scope="col">Preview</th>
+                        </tr>
+                      </thead>
+                      <script>
+                        for (var key in platformNames) {
+                          document.write("<tbody class=\"os-group\">");
+                          document.write("<tr>");
+                            document.write("<td class=\"os\" rowspan=\"3\" scope=\"row\">");
+                            document.write(platformNames[key]);
+                            document.write("</td>");
+                            document.write("<td>");
+                            document.write("<a class=\"fa fa-download stable\" href=\"+stableLinks[key]+\"></a>");
+                            document.write("</td>");
+                            document.write("<td>");
+                            document.write("<a class=\"fa fa-download preview\" href=\"+previewLinks[key]+\"></a>");
+                            document.write("</td>");
+                          document.write("</tr>");
+                          document.write("</tbody>");
+                        };
+                      </script>
+                    </table>
+                  </div> <!-- /.dropdown-menu -->
+                </div> <!-- /.dropdown -->
                 <span>Free download</span>
               </td>
               <td class="action">
