@@ -222,9 +222,13 @@ layout: default
               <td>&nbsp;</td>
               <td class="action">
                 <div class="dropdown">
-                  <button class="btn btn-lg btn-community btn-dl dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                  <a href="#" class="btn btn-lg btn-community btn-dl">
                     <span class="fa fa-download"></span> Download for Mac
                     <span class="tiny-text">Stable v1.0.0</span>
+                  </a>
+                  <button type="button" class="btn btn-lg btn-community btn-dl dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <table>
@@ -239,11 +243,11 @@ layout: default
                           <th class="build-header" scope="col">Preview</th>
                         </tr>
                       </thead>
+                      <tbody class="os-group">
                       <script>
                         for (var key in platformNames) {
-                          document.write("<tbody class=\"os-group\">");
                           document.write("<tr>");
-                            document.write("<td class=\"os\" rowspan=\"3\" scope=\"row\">");
+                            document.write("<td class=\"os\">");
                             document.write(platformNames[key]);
                             document.write("</td>");
                             document.write("<td>");
@@ -253,9 +257,9 @@ layout: default
                             document.write("<a class=\"fa fa-download preview\" href=\"+previewLinks[key]+\"></a>");
                             document.write("</td>");
                           document.write("</tr>");
-                          document.write("</tbody>");
                         };
                       </script>
+                      </tbody>
                     </table>
                   </div> <!-- /.dropdown-menu -->
                 </div> <!-- /.dropdown -->
