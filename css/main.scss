@@ -115,16 +115,12 @@ h3{
 
 	&.btn-primary{
 		padding-bottom: 20px;
-
-		.tiny-text{
-				bottom: 3px;
-		}
 	}
 	.tiny-text{
 		display: inline-block;
 		font-size: 0.7rem;
 		position: absolute;
-			bottom: 2px;
+			bottom: 3px;
 			right: 0;
 			left: 0;
 		text-align: center;
@@ -145,10 +141,17 @@ h3{
 	}
 }
 .btn-inverted{
-	background-color: $btn-secondary-dark-bd;
-	color: white;
+	background-color: $btn-dark-bg;
+	color: $btn-dark-color;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
+
+	&:hover,
+	&:focus,
+	&:active{
+		background-color: $btn-dark-hover-bg;
+		color: $btn-dark-color;
+	}
 }
 
 /**
