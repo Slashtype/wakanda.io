@@ -465,76 +465,49 @@ h3{
     width: 80%;
 	}
 	.quote-container{
-		background: #fff;
-		//border: 1px solid #dfdfdf;
-		border-radius: 5px;
 		height: 100%;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
     position: relative;
 		width: 100%;
 	}
 	.review-quote{
-		background: #fff;
 		color: #6d6d6d;
     margin: 0 auto;
     max-width: 700px;
-    padding: 20px 20px 32px 45px;
+    padding: 0 8px 0 78px;
     position: relative;
 
 		.fa-quote-left{
-	    color: #f2f2f2;
-	    font-size: 30px;
-	    position: absolute;
-		    left: 12px;
-		    top: 15px;
-		  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+	    display: none;
 		}
 		p{
-	    font-size: 17px;
-	    line-height: 24px;
-	    text-align: center;
+	    font-size: 14px;
+	    line-height: 20px;
 		}
 	}
 	.review-img{
     position: absolute;
-  		right: 12px;
-  		bottom: 10px;
-
+		@media(max-width: 640px){
+  		top: 0;
+  		left: 0;
+		}
 		img{
-	    border: 7px solid #fff;
 	    border-radius: 100%;
-	    //box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 	    transition: all 0.3s ease 0s;
-	    height: 100px;
-	    width: 100px;
-
-	    &:hover{
-				border: 5px solid $main-color;
-				box-shadow: none;
-				transform: scale(1.05);
-			}
+	    height: 70px;
+	    width: 70px;
 		}
 	}
 	.review-author{
-		background: #f8f7f7;
-		border-top: 1px solid #dfdfdf;
     font-size: 14px;
-		padding: 20px 110px 20px 15px;
 		position: relative;
-		height: 80px;
+		padding-left: 78px;
     position: absolute;
-    	bottom: 0;
+    	bottom: 28px;
     	left: 0;
     width: 100%;
-
-		&:before{
-	    background: #fff;
-	    content: "";
-	    height: 1px;
-	    position: absolute;
-	    top: 0;
-	    left: 0;
-	    width: 100%;
+		@media(max-width: 640px){
+    	line-height: 16px;
 		}
 
 		a{
@@ -554,6 +527,70 @@ h3{
     	display: inline-block;
     	width: 100%;
     }
+	}
+	@media(min-width: 641px){
+
+		.quote-container{
+			background: #fff;
+			//border: 1px solid #dfdfdf;
+	    padding-bottom: 80px;
+		}
+		.review-quote{
+			background: #fff;
+			padding: 20px 20px 32px 45px;
+
+			.fa-quote-left{
+		    color: #f2f2f2;
+		    display: block;
+		    font-size: 30px;
+		    position: absolute;
+			    left: 12px;
+			    top: 15px;
+			  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+			}
+			p{
+		    font-size: 17px;
+		    line-height: 24px;
+  	    text-align: center;
+			}
+		}
+		.review-img{
+	    position: absolute;
+	  		right: 12px;
+	  		bottom: 10px;
+
+			img{
+		    border: 7px solid #fff;
+		    border-radius: 100%;
+		    //box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+		    transition: all 0.3s ease 0s;
+		    height: 100px;
+		    width: 100px;
+
+		    &:hover{
+					border: 5px solid $main-color;
+					box-shadow: none;
+					transform: scale(1.05);
+				}
+			}
+		}
+		.review-author{
+			background: #f8f7f7;
+			border-top: 1px solid #dfdfdf;
+			height: 80px;
+			padding: 20px 110px 20px 15px;
+			bottom: 0;
+
+			&:before{
+		    background: #fff;
+		    content: "";
+		    height: 1px;
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+			}
+		}
 	}
 }
 
