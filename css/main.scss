@@ -487,7 +487,7 @@ h3{
 	}
 	.review-img{
     position: absolute;
-		@media(max-width: 640px){
+		@media(max-width: 767px){
   		top: 0;
   		left: 0;
 		}
@@ -506,7 +506,7 @@ h3{
     	bottom: 28px;
     	left: 0;
     width: 100%;
-		@media(max-width: 640px){
+		@media(max-width: 767px){
     	line-height: 16px;
 		}
 
@@ -528,7 +528,7 @@ h3{
     	width: 100%;
     }
 	}
-	@media(min-width: 641px){
+	@media(min-width: 768px){
 
 		.quote-container{
 			background: #fff;
@@ -595,9 +595,53 @@ h3{
 }
 
 /**
- * Parallax section
+ * Events
  */
+.event-list{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 
+	.fa{
+		font-size: 52px;
+		position: relative;
+
+		.month{
+			font-family: "Roboto",sans-serif;
+			font-size: 12px;
+			position: absolute;
+				top: 35px;
+				left: 4px;
+				right: 4px;
+			text-align: center;
+		}
+		.day{
+			font-family: "Roboto",sans-serif;
+			font-size: 22px;
+			position: absolute;
+				top: 16px;
+				left: 1px;
+				right: 4px;
+			text-align: center;
+		}
+	}
+	a{
+		display: inline-block;
+		margin-left: 15px;
+		position: relative;
+			top: 4px;
+	}
+	.event-title{
+		color: $base-color;
+		display: inline-block;
+		width: 100%;
+	}
+	.event-subtitle{
+		color: $secondary-light-bg-color;
+		display: inline-block;
+		width: 100%;
+	}
+}
 
 /**
  * Footer
