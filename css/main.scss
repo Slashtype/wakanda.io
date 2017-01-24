@@ -602,7 +602,11 @@ h3{
 	margin: 0;
 	padding: 0;
 
+	> li{
+		margin: 0 0 15px;
+	}
 	.fa{
+		color: $main-color;
 		font-size: 52px;
 		position: relative;
 
@@ -632,12 +636,12 @@ h3{
 			top: 4px;
 	}
 	.event-title{
-		color: $base-color;
+		color: #ebb704;
 		display: inline-block;
 		width: 100%;
 	}
 	.event-subtitle{
-		color: $secondary-light-bg-color;
+		color: #868484;
 		display: inline-block;
 		width: 100%;
 	}
