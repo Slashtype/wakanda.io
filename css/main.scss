@@ -30,6 +30,12 @@ a{
 		text-decoration: none;
 	}
 }
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
 .btn{
 	cursor: pointer;
 }
@@ -459,8 +465,12 @@ h3{
     width: 80%;
 	}
 	.quote-container{
+		background: #fff;
 		//border: 1px solid #dfdfdf;
 		border-radius: 5px;
+		height: 100%;
+    padding-bottom: 80px;
+    position: relative;
 		width: 100%;
 	}
 	.review-quote{
@@ -487,7 +497,7 @@ h3{
 	}
 	.review-img{
     position: absolute;
-  		right: 24px;
+  		right: 12px;
   		bottom: 10px;
 
 		img{
@@ -512,6 +522,10 @@ h3{
 		padding: 20px 110px 20px 15px;
 		position: relative;
 		height: 80px;
+    position: absolute;
+    	bottom: 0;
+    	left: 0;
+    width: 100%;
 
 		&:before{
 	    background: #fff;
