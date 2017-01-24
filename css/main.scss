@@ -252,6 +252,14 @@ h3{
 		.action{
 			min-width: 300px;
 			text-align: center;
+	
+			@media(max-width: 991px){
+				min-width: 256px;
+
+				.btn {
+			    font-size: 16px;
+				}
+			}
 
 			.fa{
 				margin-right: 8px;
