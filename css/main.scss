@@ -143,7 +143,7 @@ h3{
 		background-color: $btn-default-hover-bg;
 		border-color:  $btn-default-hover-bg;
 		box-shadow: none;
-		color: $base-dark-bg-color;
+		color: $light-color;
 	}
 }
 .btn-inverted{
@@ -184,7 +184,7 @@ h3{
  */
 #section-slideshow{
 
-  background-color: white;
+  background-color: $light-color;
 }
 
 /**
@@ -204,7 +204,7 @@ h3{
  * Section Download
  */
 #section-download{
-    background-color: $lighter-bg;
+  background-color: $lighter-bg;
 	text-align: center;
 
 	.img-responsive{
@@ -354,7 +354,7 @@ h3{
     position: relative;
 	}
 	#ml-name{
-		background: #fff url("../img/nl-shadow.png") repeat-y right top;
+		background: $light-color url("../img/nl-shadow.png") repeat-y right top;
 		border: none;
 		border-right: 2px solid $input-bd;
 		border-radius: 4px 0 0 4px;
@@ -375,7 +375,7 @@ h3{
 		background: $main-color;
 		border: 1px solid $main-color;
 		border-radius: 0 4px 4px 0;
-		color: $base-dark-bg-color;
+		color: $light-color;
 		cursor: pointer;
 		font-size: 1.2rem;
 		line-height: 48px;
@@ -391,7 +391,7 @@ h3{
     &:focus{
     	background: $secondary-color;
     	border: 1px solid $secondary-color;
-      color: $base-dark-bg-color;
+      color: $light-color;
     }
 	}
 }
@@ -404,7 +404,7 @@ h3{
   &:hover,
   &:focus,
   &:active{
-    color: $base-dark-bg-color;
+    color: $light-color;
   }
 	.fa{
 		font-size: 35px;
@@ -422,7 +422,7 @@ h3{
     &:hover,
     &:focus,
     &:active{
-      box-shadow: 0 0 0 1px $base-dark-bg-color inset;
+      box-shadow: 0 0 0 1px $light-color inset;
     }
   }
 }
@@ -652,6 +652,7 @@ h3{
 	.event-title{
 		color: $title-color;
 		display: inline-block;
+		transition: all 200ms linear 0s;
 		width: 100%;
 
 		&:hover,

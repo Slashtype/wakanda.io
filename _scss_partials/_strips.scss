@@ -8,7 +8,7 @@
     overflow: hidden;
     transform: skewY(-4deg);
     transform-origin: 0;
-    background: #ffc600;
+    background: $main-color;
     top: 299px;
     height: 221px;
 }
@@ -21,5 +21,5 @@
     width: 100%;
     left: 0;
     top: 0;
-    background: #fffad6
+    background: $main-color;
 }
