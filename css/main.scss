@@ -70,7 +70,7 @@ h1{
     font-size: 2rem;
 	}
 	+ hr{
-	  border-color: #454545 #454545 -moz-use-text-color;
+	  border-color: $hr-bg $hr-bg -moz-use-text-color;
 	  border-image: none;
 	  border-style: solid solid none;
 	  border-width: 1px 1px 0;
@@ -90,7 +90,7 @@ h2{
     font-size: 1.8rem;
 	}
 	+ hr{
-	  border-color: #454545 #454545 -moz-use-text-color;
+	  border-color: $hr-bg $hr-bg -moz-use-text-color;
 	  border-image: none;
 	  border-style: solid solid none;
 	  border-width: 1px 1px 0;
@@ -287,10 +287,10 @@ h3{
 				background-color: transparent;
 
 				&:nth-child(odd){
-					background-color: rgba(0, 0, 0, 0.05);
+					background-color: $table-odd;
 				}
 				&:nth-child(even){
-					background-color: #fff;
+					background-color: $table-even;
 				}
 			}
 			td{
@@ -346,7 +346,7 @@ h3{
 		margin: 0 0 40px;
 	}
 	input{
-		color: #c3c3c3;
+		color: $input-color;
 		text-align: center;
 	}
 	form{
@@ -479,7 +479,7 @@ h3{
 		width: 100%;
 	}
 	.review-quote{
-		color: #6d6d6d;
+		color: $review-quote-color;
     margin: 0 auto;
     max-width: 700px;
     padding: 0 8px 0 78px;
@@ -519,7 +519,7 @@ h3{
 		}
 
 		a{
-	    color: #212121;
+	    color: $review-link-color;
 	    cursor: pointer;
 	    display: inline-block;
 	    font-weight: bold;
@@ -531,7 +531,7 @@ h3{
 			}
     }
     span{
-    	color: #595959;
+    	color: $review-txt-color;
     	display: inline-block;
     	width: 100%;
     }
@@ -539,16 +539,16 @@ h3{
 	@media(min-width: 768px){
 
 		.quote-container{
-			background: #fff;
+			background: $review-quote-bg;
 			//border: 1px solid #dfdfdf;
 	    padding-bottom: 80px;
 		}
 		.review-quote{
-			background: #fff;
+			background: $review-quote-bg;
 			padding: 20px 20px 32px 45px;
 
 			.fa-quote-left{
-		    color: #f2f2f2;
+		    color: $review-quote-left-color;
 		    display: block;
 		    font-size: 30px;
 		    position: absolute;
@@ -568,7 +568,7 @@ h3{
 	  		bottom: 10px;
 
 			img{
-		    border: 7px solid #fff;
+		    border: 7px solid $review-img-bd;
 		    border-radius: 100%;
 		    //box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 		    transition: all 0.3s ease 0s;
@@ -583,14 +583,14 @@ h3{
 			}
 		}
 		.review-author{
-			background: #f8f7f7;
-			border-top: 1px solid #dfdfdf;
+			background: $review-author-bg;
+			border-top: 1px solid $review-author-bd;
 			height: 80px;
 			padding: 20px 110px 20px 15px;
 			bottom: 0;
 
 			&:before{
-		    background: #fff;
+		    background: $review-quote-bg;
 		    content: "";
 		    height: 1px;
 		    position: absolute;
@@ -626,7 +626,7 @@ h3{
 			font-family: "Roboto",sans-serif;
 			font-size: 12px;
 			position: absolute;
-				top: 34px;
+				top: 18px;
 				left: 4px;
 				right: 4px;
 			text-align: center;
@@ -635,7 +635,7 @@ h3{
 			font-family: "Roboto",sans-serif;
 			font-size: 19px;
 			position: absolute;
-				top: 17px;
+				top: 28px;
 				left: 1px;
 				right: 4px;
 			text-align: center;
@@ -650,12 +650,18 @@ h3{
 		width: 80%;
 	}
 	.event-title{
-		color: #ebb704;
+		color: $title-color;
 		display: inline-block;
 		width: 100%;
+
+		&:hover,
+		&:focus,
+		&:active{
+			color: $main-color;
+		}
 	}
 	.event-subtitle{
-		color: #868484;
+		color: $event-subtitle-color;
 		display: inline-block;
 		width: 100%;
 	}
