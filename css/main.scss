@@ -101,6 +101,7 @@ h3{
 .btn{
 	transition: all 200ms linear 0s;
 }
+
 .btn-primary{
 	background-color: $btn-default-bg;
 	border-color:  $btn-default-bg;
@@ -108,7 +109,7 @@ h3{
 
 	&:hover,
 	&:focus,
-	&:active{
+	&:active{ 
 		background-color: $btn-default-hover-bg;
 		border-color:  $btn-default-hover-bg;
 	}
@@ -118,8 +119,23 @@ h3{
 	color: white;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
+
+	&:hover,
+	&:focus,
+	&:active{
+		background-color: $secondary-light-bg-color;
+		color: $btn-default-color;
+	}
 }
 
+.btn-dl{
+	font-weight: 300;
+	font-size: 1rem;
+	
+	&.btn-primary{
+		padding-bottom: 20px;
+	}
+}
 /**
  * Section Intro
  */
@@ -130,8 +146,19 @@ h3{
 	.btn{
 		margin-top: 40px;
 	}
+	@media (min-width: 768px){
+		.btn-dl {
+			margin-bottom: 180px;
+		}
+	}
+	h1 {
+		margin-bottom: 0;
+	}
 	h2{
 		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+    	font-size: 2.1rem;
+		margin-bottom: 0;
 	}
 }
 
@@ -142,16 +169,17 @@ h3{
  */
 #section-slideshow{
 
-  background-color: white;
+  background-color: $lighter-bg;
 }
 
 /**
  * Section Features
  */
 #section-features1{
-  background-color: $lighter-bg;
+  background-color: white;
 }
 #section-features2{
+	background-color: white;
 
 }
 .what-we-do-features{
