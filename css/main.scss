@@ -111,6 +111,7 @@ h3{
 .btn{
 	transition: all 200ms linear 0s;
 }
+
 .btn-group-lg > .btn + .dropdown-toggle-split,
 .btn-lg + .dropdown-toggle-split{
   margin-left: -28px;
@@ -132,6 +133,7 @@ h3{
 		text-align: center;
 	}
 }
+
 .btn-primary{
 	background-color: $btn-default-bg;
 	border-color:  $btn-default-bg;
@@ -139,7 +141,7 @@ h3{
 
 	&:hover,
 	&:focus,
-	&:active{
+	&:active{ 
 		background-color: $btn-default-hover-bg;
 		border-color:  $btn-default-hover-bg;
 		box-shadow: none;
@@ -155,11 +157,19 @@ h3{
 	&:hover,
 	&:focus,
 	&:active{
-		background-color: $btn-dark-hover-bg;
-		color: $btn-dark-color;
+		background-color: $secondary-light-bg-color;
+		color: $btn-default-color;
 	}
 }
 
+.btn-dl{
+	font-weight: 300;
+	font-size: 1rem;
+	
+	&.btn-primary{
+		padding-bottom: 20px;
+	}
+}
 /**
  * Section Intro
  */
@@ -174,8 +184,19 @@ h3{
 			margin-right: 8px;
 		}
 	}
+	@media (min-width: 768px){
+		.btn-dl {
+			margin-bottom: 180px;
+		}
+	}
+	h1 {
+		margin-bottom: 0;
+	}
 	h2{
 		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+    	font-size: 2.1rem;
+		margin-bottom: 0;
 	}
 }
 
@@ -183,17 +204,17 @@ h3{
  * Section Slideshow
  */
 #section-slideshow{
-
-  background-color: $light-color;
+  background-color: $lighter-bg;
 }
 
 /**
  * Section Features
  */
 #section-features1{
-  background-color: $lighter-bg;
+  background-color: white;
 }
 #section-features2{
+	background-color: white;
 
 }
 .what-we-do-features{
