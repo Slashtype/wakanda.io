@@ -5,15 +5,21 @@ $secondary-link-hover-color: #fbbd00;
 
 $title-color: #212121;
 
+/**
+* General theme colors
+*/
 $base-color: #212121;
 $main-color: #FFC600;
+$main-color-transition: #F9B50F;
 $secondary-color: #EC5C09;
 $variant-color: #E93434;
 $highlighted-color: #00D5AC;
+$highlighted-color-transition: #2EBCA1;
 
 $dark-bg: #232A33;
 $darker-bg: #2c2c2c;
 $light-bg: #f0f4f7;
+$light-bg-transition: #DBE4EB;
 $light-bg-color: #8a8b8c;
 $lighter-bg: #f0f2f3;
 $highlighted-bg: #00D5AC;
@@ -34,7 +40,6 @@ $secondary-light-bg-color: #555555;
 $btn-vav-color: #253039;
 $btn-default-bg: #ffc600;
 $btn-default-hover-bg: #fbbd00;
-//$btn-default-hover-bg: #232A33;
 $btn-default-color: #fff;
 
 $btn-primary-bg: #00D5AC;
