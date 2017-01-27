@@ -719,7 +719,7 @@ h3{
 	color: $footer-color;
 	font-size: 0.82rem;
 	overflow: hidden;
-	padding: 1rem 0 0;
+	padding: 3rem 0 0;
 
 	@media (max-width: 768px){
 		background-color: #fff;
@@ -800,11 +800,11 @@ h3{
 		margin: 15px 0 0 30px;
 		padding: 0;
 
-		@media (max-width: 640px){
-
+		@media (min-width: 768px){
+			margin-right: 8px;
     }
 		@media (min-width: 992px){
-    	margin-right: 70px;
+    		margin-right: 95px;
     }
 
 		> li{
