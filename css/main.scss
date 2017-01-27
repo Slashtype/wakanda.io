@@ -13,7 +13,7 @@
 }
 
 html{
-  min-height: 100%;
+  	min-height: 100%;
 }
 body{
 	color: $base-color;
@@ -156,13 +156,13 @@ h3{
 		@media (min-width: 992px){
 			& {
 				font-size: 3.5rem;
-	}
+			}
 		}
 		@media (min-width: 1200px){
 			& {
 				font-size: 4rem;
+			}
 		}
-	}
 	}
 	h2{
 		font-family: 'Roboto', sans-serif;
@@ -188,7 +188,10 @@ h3{
  * Section Features
  */
 #section-features1{
-  background-color: white;
+  	background-color: white;
+	img {
+		max-height: 40px;
+	}
 }
 #section-features2{
 	background-color: white;
