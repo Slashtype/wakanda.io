@@ -355,7 +355,7 @@ h3{
 	@media (max-width: 768px){
 		background-color: #fff;
 		color: $base-light-bg-color;
-		padding: 3px 0;
+		padding: 0;
 	}
 
 	a{
@@ -388,7 +388,11 @@ h3{
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-
+		@media (max-width: 768px){
+			& {
+				padding-left: 1.25rem;
+			}
+		}
 		@media (max-width: 640px){
     	
     	> li{
@@ -397,7 +401,7 @@ h3{
     }
 	}
 	.card-block{
-    padding: 0.5rem 0 1rem;
+    padding: 0 0 1rem 0;
 	}
 	.secondary-footer{
     background-color: $secondary-footer-bg;
@@ -452,7 +456,11 @@ h3{
 		}
   }
 
-  @media (max-width: 767px){
+  @media (max-width: 768px){
+
+	.container {
+		width: 100%;
+	}
 
   	.container-accordion{
 			padding-right: 0;
@@ -474,6 +482,7 @@ h3{
 
 		    h3{
 		    	padding: 1rem 1.25rem;
+				margin: 0;
 		    }
 			}
 			.card-block{
