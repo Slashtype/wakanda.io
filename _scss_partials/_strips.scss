@@ -1,61 +1,79 @@
-$orange: #FFC600;
-$orange-transition: #F9B50F;
-$gray: #F0F4F7;
-$gray-transition: #DBE4EB;
-$green: #00D5AC;
-$green-transition: #2EBCA1;
+// Height of each strips, for top to bottom
+$height-1: 6px;
+$height-2: 43px;
+$height-3: 7px;
+$height-4: 52px;
+$height-5: 20px;
+$height-6: 80px;
+$height-7: 134px;
 
 #strips, #strips span {
     position: absolute;
 }
 
+#strips span {
+    right: 0;
+}
+
 #strips {
-    width: 100%;
-    height: 100%;
+    width: 1920px;
+    height: 341px;
+    right: 0;
     overflow: hidden;
     transform: skewY(-8deg);
     transform-origin: 0;
-    background: $orange;
-    top: 425px;
-    height: 335px;
-    z-index: -1;
+    background-color: white;
+    top: 470px;
+    @media (max-width: 992px){
+        & {
+            top: 544px;
+        }
+    }
 }
 
-#strips span {
-    left: 0;
+#section-slideshow, #section-features1 {
+    position: relative;
+    z-index: 10
 }
 
 #strips :nth-child(1) {
     width: 100%;
-    height: 7px;
-    top: 43px;
-    background: $orange-transition;
+    height: $height-2;
+    top: $height-1;
+    background: $main-color;
 }
 
 #strips :nth-child(2) {
     width: 100%;
-    height: 52px;
-    top: 50px;
-    background: $gray;
+    height: $height-3;
+    top: $height-1 + $height-2;
+    background: $main-color-transition;
 }
 
 #strips :nth-child(3) {
     width: 100%;
-    height: 20px;
-    top: 102px;
-    background: $gray-transition;
+    height: $height-4;
+    top: $height-1 + $height-2 + $height-3;
+    background: $light-bg;
 }
 
 #strips :nth-child(4) {
     width: 100%;
-    height: 80px;
-    top: 122px;
-    background: $green;
+    height: $height-5;
+    top: $height-1 + $height-2 + $height-3 + $height-4;
+    background: $light-bg-transition;
 }
 
 #strips :nth-child(5) {
     width: 100%;
-    height: 134px;
-    top: 202px;
-    background: $green-transition;
+    height: $height-6;
+    top: $height-1 + $height-2 + $height-3 + $height-4 + $height-5;
+    background: $highlighted-color;
+}
+
+#strips :nth-child(6) {
+    width: 100%;
+    height: $height-7;
+    top: $height-1 + $height-2 + $height-3 + $height-4 + $height-5 + $height-6;
+    background: $highlighted-color-transition;
 }
