@@ -18,6 +18,7 @@ html{
 body{
 	color: $base-color;
 	font-family: 'Roboto', sans-serif;
+	background-color: $lighter-bg;
 }
 a{
 	color: $link-color;
@@ -118,22 +119,24 @@ h3{
 	}
 }
 .btn-inverted{
-	background-color: $btn-secondary-dark-bd;
+	background-color: $dark-bg;
 	color: white;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
+	font-weight: 900;
+	margin-top: 40px;
+	padding: 1.25rem 2.5rem;
 
 	&:hover,
 	&:focus,
 	&:active{
-		background-color: $secondary-light-bg-color;
+		background-color: $light-bg-color;
 		color: $btn-default-color;
 	}
 }
 
 .btn-dl{
-	font-weight: 300;
-	font-size: 1rem;
+	font-weight: bold;
+	font-size: 1.15rem;
 	
 	&.btn-primary{
 		padding-bottom: 20px;
@@ -145,17 +148,21 @@ h3{
 #section-headline{
 	position: relative;
 	text-align: center;
+	background-color: $light-bg;
 
-	.btn{
-		margin-top: 40px;
+	h1 {
+		font-size: 3.25rem;
+		margin-bottom: 0;
+		@media (min-width: 992px){
+			& {
+				font-size: 3.5rem;
 	}
-	@media (min-width: 768px){
-		.btn-dl {
-			margin-bottom: 180px;
+		}
+		@media (min-width: 1200px){
+			& {
+				font-size: 4rem;
 		}
 	}
-	h1 {
-		margin-bottom: 0;
 	}
 	h2{
 		font-family: 'Roboto', sans-serif;
@@ -163,16 +170,18 @@ h3{
     	font-size: 2.1rem;
 		margin-bottom: 0;
 	}
+	@media (min-width: 768px){
+		.btn-dl {
+			margin-bottom: 120px;
+		}
+	}
 }
-
-
 
 /**
  * Section Slideshow
  */
 #section-slideshow{
-
-  background-color: $lighter-bg;
+	background-color: $light-bg;
 }
 
 /**
