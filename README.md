@@ -30,7 +30,7 @@ $ jekyll serve
 
 - to update the main menu layout, edit `_includes/menu.html`
 - to update the general layout, edit `_layouts/default.html`
-- to update the Wakanda theme (colors and fonts), edit `css/wakanda.scss`
+- to update the Wakanda style, edit `_scss_partials/_*.scss` files and `css/main.scss`
 
 ### Script configuration
 
@@ -45,6 +45,6 @@ $ jekyll serve
 
 ### Libraries
 
-The website uses Bootstrap `v4.0.0-alpha.5`.
+The website uses Bootstrap `v4.0.0-alpha.6`.
 
 - to upgrade bootstrap, edit `css/lib/bootstrap/*` files.
