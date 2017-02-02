@@ -225,67 +225,59 @@ h3{
  * Section Download
  */
 #section-download{
-  background-color: $lighter-bg;
-	text-align: center;
-
+  background-color: $light-bg;
+	code {
+		display: block;
+		color: $white-color;
+		background-color: $dark-bg;
+		font-size: 60%;
+	}
 	.img-responsive{
 		margin: 0 auto;
 	}
 	.production-table{
-		border-collapse: separate;
+		border-spacing: 0;
+		border-collapse: collapse;
+		text-align: center;
 
+		@media(max-width: 940px){
+			font-size: 90%;
+		}
+
+
+		td, th {
+			border: none;
+		}
 		thead{
-
-			.community{
-		    background: $main-color;
-    		color: $base-dark-bg-color;
+			.community, .enterprise {
+				height: 73px;
+				vertical-align: middle;
 			}
-	    .enterprise{
-		    background: $dark-bg;
-    		color: $base-dark-bg-color;
-    	}
+			.community{
+				background: $highlighted-bg;
+				color: $white-color;
+			}
+			.enterprise{
+				background: $dark-bg;
+				color: $white-color;
+			}
+		}
+		tbody > tr:nth-of-type(odd) {
+			background-color: $light-bg-transition;
 		}
 		.item-title{
 			text-align: left;
 		}
-		.btn-community{
-			background: $btn-community-bg;
-			color: $btn-community-color;
-
-			&:hover,
-			&:focus,
-			&:active{
-				background: $btn-community-hover-bg;
-			}
-		}
-		.btn-enterprise{
-			background: $btn-enterprise-bg;
-			color: $btn-enterprise-color;
-			padding-top: 15px;
-			padding-bottom: 15px;
-
-			&:hover,
-			&:focus,
-			&:active{
-				background: $btn-enterprise-hover-bg;
-			}
-		}
 		.action{
-			min-width: 300px;
 			text-align: center;
-	
-			@media(max-width: 991px){
-				min-width: 256px;
-
-				.btn {
-			    font-size: 16px;
-				}
+			.btn-lg {
+				font-size: 95%;
 			}
 
 			.fa{
 				margin-right: 8px;
 			}
-			> span{
+			.dl-info{
 				display: inline-block;
 				font-size: .9rem;
 				margin-top: 15px;
@@ -298,11 +290,12 @@ h3{
 	}
 	.dropdown-menu{
 		padding: 0;
-
+		
 		table{
-			
+			min-width: 290px;
 			thead th.build-header{
 				font-weight: 500;
+				text-align:center;
 			}
 			tbody tr{
 				background-color: transparent;
@@ -323,11 +316,12 @@ h3{
 						color: $btn-primary-bg;
 					}
 					&.preview{
-						color: $base-color;
+						color: $secondary-color;
 					}
 				}
 				&.os{
-					font-weight: 500;
+					font-weight: 300;
+					font-size: 80%;
 					text-align: left;
 				}
 			}
