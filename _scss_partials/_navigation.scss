@@ -3,7 +3,9 @@
   padding: 0;
   height: 66px;
   width: 100%;
-
+  @media (max-width: 640px){
+    margin-bottom: 0;
+  }
   a:hover,
   a:focus{
     outline: none;
@@ -74,7 +76,6 @@
           font-size: 12pt;
           font-weight: 500;
           line-height: 1em;
-          margin-top: -10px;
           margin-left: 17px;
           padding: 10px 14px 9px;
           text-decoration: none;
@@ -141,7 +142,7 @@
     animation: close;
     animation-duration: .5s;
     //color: $base-color;
-    color: $base-dark-bg-color;
+    color: $white-color;
     float: right;
     font-size: 3rem;
     font-weight: 700;
@@ -181,7 +182,7 @@
         animation: mobilein;
         animation-delay: -1s; 
         animation-duration: .8s;
-        color: $base-dark-bg-color;
+        color: $white-color;
         font-size: 1.45rem;
         line-height: 70px;
         transition-timing-function: ease;
