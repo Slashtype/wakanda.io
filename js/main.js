@@ -84,6 +84,7 @@ var stableLinks = communityLinks("stable");
 var previewLinks = communityLinks("preview");
 var platform = getPlatform();
 
+$(".platform-name").append(platformNames[getPlatform()]);
 $("#version-stable").append(versionCommunityLink.stable);
 $("#version-preview").append(versionCommunityLink.preview);
 
