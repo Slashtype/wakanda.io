@@ -79,16 +79,6 @@ h1{
 	@media(max-width: 640px){
     font-size: 2rem;
 	}
-	+ hr{
-	  border-color: $hr-bg $hr-bg -moz-use-text-color;
-	  border-image: none;
-	  border-style: solid solid none;
-	  border-width: 1px 1px 0;
-	  box-sizing: content-box;
-	  margin: 0 auto 30px;
-	  height: 0;
-	  width: 96px;
-	}
 }
 h2{
   font-size: 2.8rem;
@@ -97,16 +87,6 @@ h2{
 
 	@media(max-width: 640px){
     font-size: 1.8rem;
-	}
-	+ hr{
-	  border-color: $hr-bg $hr-bg -moz-use-text-color;
-	  border-image: none;
-	  border-style: solid solid none;
-	  border-width: 1px 1px 0;
-	  box-sizing: content-box;
-	  margin: 0 auto 50px;
-	  height: 0;
-	  width: 96px;
 	}
 }
 h3{
@@ -347,10 +327,6 @@ h3{
 
 	h2{
 	  color: $base-dark-bg-color;
-
-		+ hr{
-		  border-color: $base-dark-bg-color $base-dark-bg-color -moz-use-text-color;
-		}
 	}
 }
 .mailing{
