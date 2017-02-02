@@ -68,7 +68,6 @@ h2{
 h1{
   font-size: 4rem;
   margin-bottom: 30px;
-  text-align: center;
 
 	@media(max-width: 640px){
     font-size: 2rem;
@@ -88,7 +87,6 @@ h2{
   font-size: 2.8rem;
   font-weight: 100;
   margin-bottom: 40px;
-  text-align: center;
 
 	@media(max-width: 640px){
     font-size: 1.8rem;
@@ -181,7 +179,7 @@ h3{
  */
 #section-headline{
 	position: relative;
-	text-align: center;
+	text-align: left;
 	background-color: $light-bg;
 
 

@@ -1,10 +1,19 @@
 /*
- * Download links configuration
+ * Headline typing effect configuration
  */
 
-var baseCommunityLink = "https://github.com/Wakanda/wakanda-digital-app-factory/releases/download/";
+$(function() {
+    var options = {
+      stringsElement: $('#typed-strings'),
+      startDelay: 1500,
+      backDelay: 1000,
+      typeSpeed: 0
+    }
+    $(".typed-text").typed(options);
+});
 
 var versionCommunityLink = { stable: "1.1.3", preview: "2.0.1" };
+var baseCommunityLink = "https://github.com/Wakanda/wakanda-digital-app-factory/releases/download/";
 
 function partialCommunityLink(stableOrPreview, allOrServer) { 
     return baseCommunityLink+"v"+versionCommunityLink[stableOrPreview]+"/wakanda-community-"+allOrServer+"_"+versionCommunityLink[stableOrPreview]+"_";
