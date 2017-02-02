@@ -12,7 +12,15 @@ $(function() {
     $(".typed-text").typed(options);
 });
 
-var versionCommunityLink = { stable: "1.1.3", preview: "2.0.1" };
+/*
+ * Download Community Edition links configuration
+ */
+
+var versionCommunityLink = { 
+    stable: "1.1.3",
+    preview: "2.0.1"
+};
+
 var baseCommunityLink = "https://github.com/Wakanda/wakanda-digital-app-factory/releases/download/";
 
 function partialCommunityLink(stableOrPreview, allOrServer) { 
@@ -24,25 +32,17 @@ function communityLinks(stableOrPreview) {
         macOS: partialCommunityLink(stableOrPreview,"all")+"x64.dmg",
         win32: partialCommunityLink(stableOrPreview,"all")+"x86.msi",
         win64: partialCommunityLink(stableOrPreview,"all")+"x64.msi",
-        linux32: partialCommunityLink(stableOrPreview,"server")+"amd64.deb",
-        linux64: partialCommunityLink(stableOrPreview,"server")+"i386.deb"
+        linux32: partialCommunityLink(stableOrPreview,"server")+"i386.deb",
+        linux64: partialCommunityLink(stableOrPreview,"server")+"amd64.deb"
     }
 }
 
-var enterpriseLink = "http://www.wakanda.io/wakanda-app-factory"
 
 /*
  * Download button utils function
  */
 
 var platformLinkCollection = {
-    enterprise : {
-        osx: enterpriseLink,
-        win32: enterpriseLink,
-        win64: enterpriseLink,
-        linux32: enterpriseLink,
-        linux64: enterpriseLink
-    },
     community : communityLinks("stable"),
     communityPreview : communityLinks("preview")
 };
@@ -84,36 +84,16 @@ var stableLinks = communityLinks("stable");
 var previewLinks = communityLinks("preview");
 var platform = getPlatform();
 
-// Button Community
-// Replace console.log with proper html tags:
-console.log("// Download Button Community:")
-console.log("Download for "+platformNames[platform]+"\n(Stable v"+versionCommunityLink["stable"]+")");
-console.log(stableLinks[platform]);
+$("#version-stable").append(versionCommunityLink.stable);
+$("#version-preview").append(versionCommunityLink.preview);
 
-/** Button dropdown alternative links
-
-                  Stable      Preview
-macOS               x           x
-Windows             x           x
-Windows (32 bits)   x           x
-Linux               x           x
-Linux (32 bits)     x           x
-
-x = <i class="fa fa-arrow-down" aria-hidden="true"></i>
-*/
-
-console.log("// Dropdown for Community")
 for (var key in platformNames) {
-    // Replace console.log with proper html tags:
-    console.log(platformNames[key]);
-    console.log(stableLinks[key]);
-    console.log(previewLinks[key]);
+    document.createElement("td", document.createElement)
+    $( "#all-downloads" ).append(
+        "<tr> \
+            <td class=\"os\">"+platformNames[key]+"</td> \
+            <td><a class=\"fa fa-download stable\" href=\""+stableLinks[key]+"\"></a></td> \
+            <td><a class=\"fa fa-download preview\" href=\""+previewLinks[key]+"\"></a></td> \
+        </tr>"
+    );
 };
-
-// Button Enterprise 
-// Replace console.log with proper html tags:
-console.log("\n// Download Button Enterprise:")
-console.log("Download for "+platformNames[platform]+"\n(Stable v"+versionCommunityLink["stable"]+")");
-console.log(enterpriseLink); // redirect to a register (email required to get the enterprise trial)
-console.log("// Dropdown for Enterprise")
-console.log("No alternative downloads");

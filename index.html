@@ -29,9 +29,9 @@ layout: default
               </div>
             </h2>
             <p class="text-center">
-            <a class="btn btn-lg btn-inverted btn-dl hidden-xs-down js-scrollTo" href="#section-download">
+              <a class="btn btn-lg btn-inverted btn-dl hidden-xs-down js-scrollTo" href="#section-download">
               Download for macOS
-            </a>
+              </a>
             </p>
           </div>
         </div>
@@ -282,26 +282,12 @@ layout: default
                       <thead>
                         <tr>
                           <td></td>
-                          <th class="build-header" scope="col">Stable</th>
-                          <th class="build-header" scope="col">Preview</th>
+                          <th class="build-header" scope="col">Stable <code id="version-stable" class="hidden-md-down"></code></th>
+                          <th class="build-header" scope="col">Preview <code id="version-preview"  class="hidden-md-down"></code></th>
                         </tr>
                       </thead>
-                      <tbody class="os-group">
-                      <script>
-                        for (var key in platformNames) {
-                          document.write("<tr>");
-                            document.write("<td class=\"os\">");
-                            document.write(platformNames[key]);
-                            document.write("</td>");
-                            document.write("<td>");
-                            document.write("<a class=\"fa fa-download stable\" href=\"+stableLinks[key]+\"></a>");
-                            document.write("</td>");
-                            document.write("<td>");
-                            document.write("<a class=\"fa fa-download preview\" href=\"+previewLinks[key]+\"></a>");
-                            document.write("</td>");
-                          document.write("</tr>");
-                        };
-                      </script>
+                      <tbody id="all-downloads" class="os-group">
+ 
                       </tbody>
                     </table>
                   </div> <!-- /.dropdown-menu -->
@@ -313,7 +299,7 @@ layout: default
                   <span class="fa fa-download"></span> Download for macOS
                 </a>
                 <div class="dl-info">
-                <span>Free 30 day trial</span>
+                  <span>Free 30 day trial</span>
                 </div>
               </td>
             </tr>
