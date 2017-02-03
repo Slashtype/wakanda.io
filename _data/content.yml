@@ -1,0 +1,27 @@
+h1: Develop and Run Web & Mobile Apps
+h2: 
+  prefix: Full-Stack JavaScript Platform for
+  typing:
+    - <strong>AngularJS 1<span class="highlighted"> &plus; </span>Ionic 1</strong>
+    - <strong>TypeScript<span class="highlighted"> &plus; </span>Angular 2<span class="highlighted"> &plus; </span>Ionic 2</strong>
+
+features:
+  - p: Open Source Platform
+    img: open-source.png
+    class: offset-lg-1 offset-md-2 col-lg-2 col-md-4
+
+  - p: Connect to external DB or Web Service
+    img: data-source.png
+    class: col-lg-2 col-md-4
+
+  - p: IDE Mac & Windows
+    img: mac-win.png
+    class: col-lg-2 col-md-4
+
+  - p: Server On-Prem In the Cloud
+    img: premise-cloud.png
+    class: col-lg-2 col-md-4
+
+  - p: Mobile Web Apps AngularJS & Ionic
+    img: mobile-apps.png
+    class: col-lg-2 col-md-4

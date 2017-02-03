@@ -16,16 +16,15 @@ layout: default
       <div class="container">   
         <div class="row">
           <div class="col-md-12">
-            <h1>
-              Develop and Run Web &amp; Mobile Apps
-            </h1>
+            <h1>{{site.data.content.h1}}</h1>
             <h2>
               <div>
-                <span>Full-Stack JavaScript Platform for </span><span class="typed-text"></span>
+                <span>{{site.data.content.h2.prefix}} </span><span class="typed-text"></span>
               </div>
               <div id="typed-strings">
-                <p><strong>AngularJS 1<span class="highlighted"> &plus; </span>Ionic 1</strong></p>
-                <p><strong>TypeScript<span class="highlighted"> &plus; </span>Angular 2<span class="highlighted"> &plus; </span>Ionic 2</strong></p>
+                {% for typed_text in site.data.content.h2.typing %}
+                <p>{{typed_text}}</p>
+                {% endfor %}
               </div>
             </h2>
             <p class="text-center">
@@ -46,26 +45,13 @@ layout: default
 <section id="section-features1">
   <div class="container">   
     <div class="row text-center">
-      <div class="offset-lg-1 offset-md-2 col-lg-2 col-md-4">
-        <img class="img-fluid" src="img/open-source.png">
-        <p>Open Source Platform</p>
+      {{site.data.content.toto}}
+      {% for feature in site.data.content.features %}
+      <div class="{{ feature.class }}">
+        <img class="img-fluid" src="img/{{ feature.img }}">
+        <p>{{ feature.p }}</p>
       </div>
-      <div class="col-lg-2 col-md-4">
-        <img class="img-fluid" src="img/data-source.png">
-        <p>Connect to external DB or Web Service</p>
-      </div>
-      <div class="col-lg-2 col-md-4">
-        <img class="img-fluid" src="img/mac-win.png">
-        <p>IDE Mac & Windows</p>
-      </div>
-      <div class="col-lg-2 col-md-4">
-        <img class="img-fluid" src="img/premise-cloud.png">
-        <p>Server On-Prem In the Cloud</p>
-      </div>
-      <div class="col-lg-2 col-md-4">
-        <img class="img-fluid" src="img/mobile-apps.png">
-        <p>Mobile Web Apps AngularJS & Ionic</p>
-      </div>
+      {% endfor %}
     </div>
     <div class="row hidden-xl-down">
       <div class="col-md-12">
