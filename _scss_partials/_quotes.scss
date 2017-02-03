@@ -1,13 +1,16 @@
 .carousel {
     margin-bottom: 50px;
 }
-.carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;
-    charset=utf8,%3Csvg xmlns='http: //www.w3.org/2000/svg' fill='%212121' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+.carousel-control-next, .carousel-control-prev {
+    width: 30px;
 }
 .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;
-    charset=utf8,%3Csvg xmlns='http: //www.w3.org/2000/svg' fill='%212121' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    // change the "fill" color for "next" icon here:
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%25fff' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")}
+.carousel-control-prev-icon {
+
+    // change the "fill" color for "prev" icon here:
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%25fff' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")
 }
 .carousel-indicators {
     bottom: -60px;
@@ -17,6 +20,10 @@
     .active {
         background-color: rgba(0,0,0,0.8);
     }
+}
+
+.carousel-item {
+    min-height: 14rem;
 }
 .carousel-inner {
     margin: 0 auto;
@@ -29,17 +36,12 @@
     width: 100%;
 }
 .review-quote {
-    color: $review-quote-color;
     margin: 0 auto;
     max-width: 700px;
     padding: 0 8px 0 78px;
     position: relative;
     .fa-quote-left {
         display: none;
-    }
-    p {
-        font-size: 14px;
-        line-height: 20px;
     }
 }
 .review-img {
@@ -67,7 +69,7 @@
         line-height: 16px;
     }
     a {
-        color: $review-link-color;
+        color: $base-color;
         cursor: pointer;
         display: inline-block;
         font-weight: bold;
@@ -76,34 +78,28 @@
             color: $main-color;
         }
     }
-    span {
-        color: $review-txt-color;
+    small {
+        color: $base-light-color;
+        font-size: 85%;
         display: inline-block;
         width: 100%;
     }
 }
 @media(min-width:768px) {
     .quote-container {
-        background: $review-quote-bg;
-        //border: 1px solid #dfdfdf;
+        background: $white-color;
         padding-bottom: 80px;
     }
     .review-quote {
-        background: $review-quote-bg;
-        padding: 20px 20px 32px 45px;
+        background: $white-color;
+        padding: 20px 20px 32px 50px;
         .fa-quote-left {
-            color: $review-quote-left-color;
+            color: $highlighted-color;
             display: block;
             font-size: 30px;
             position: absolute;
             left: 12px;
             top: 15px;
-            text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
-        }
-        p {
-            font-size: 17px;
-            line-height: 24px;
-            text-align: center;
         }
     }
     .review-img {
@@ -111,27 +107,24 @@
         right: 12px;
         bottom: 10px;
         img {
-            border: 7px solid $review-img-bd;
+            border: 7px solid $white-color;
             border-radius: 100%;
-            //box-shadow: 0 0 5px rgba(0,0,0,0.2);
             transition: all 0.3s ease 0s;
             height: 100px;
             width: 100px;
             &:hover {
-                border: 5px solid $main-color;
                 box-shadow: none;
                 transform: scale(1.05);
             }
         }
     }
     .review-author {
-        background: $review-author-bg;
-        border-top: 1px solid $review-author-bd;
+        background: $light-bg-transition-variant;
         height: 80px;
         padding: 20px 110px 20px 15px;
         bottom: 0;
         &:before {
-            background: $review-quote-bg;
+            background: $white-color;
             content: "";
             height: 1px;
             position: absolute;
