@@ -81,19 +81,32 @@ h1{
 	}
 }
 h2{
-  font-size: 2.8rem;
-  font-weight: 100;
-  margin-bottom: 40px;
-
+	font-size: 2.8rem;
+	margin-bottom: 40px;
+	p {
+		margin: 0;
+		padding: 0;
+		line-height: 25px;
+	}
+	small {
+		font-size: 27%;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+		&, a {
+			color: $base-light-color;
+		} 
+		a {
+			text-decoration: underline;
+		}
+	}
 	@media(max-width: 640px){
-    font-size: 1.8rem;
+	font-size: 1.8rem;
 	}
 }
 h3{
   font-size: 1.5rem;
   text-align: center;
 }
-
 /**
  * Section Intro
  */
