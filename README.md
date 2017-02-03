@@ -47,6 +47,23 @@ Find advanced configuration options in `js/main.js`.
 - to update the general layout, edit `_layouts/default.html`
 - to update the Wakanda style, edit `_scss_partials/_*.scss` files and `css/main.scss`
 
+The `_scss_partials/_base.scss` file should help finding which file to edit:
+
+```
+/** General theme */
+@import "variables";
+@import "buttons";
+
+/** Sections **/
+@import "navigation";
+@import "headlines";
+@import "download";
+
+/** Effects */
+@import "strips";
+@import "typed";
+```
+
 ### Script configuration
 
 - to configure Google Analytics or similar services, edit `_includes/analytics.html`

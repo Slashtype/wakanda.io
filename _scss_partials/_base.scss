@@ -1,5 +1,12 @@
+/** General theme */
 @import "variables";
-@import "navigation";
 @import "buttons";
+
+/** Sections **/
+@import "navigation";
+@import "headlines";
+@import "download";
+
+/** Effects */
 @import "strips";
 @import "typed";
