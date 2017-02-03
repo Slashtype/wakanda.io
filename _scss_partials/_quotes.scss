@@ -1,0 +1,143 @@
+.carousel {
+    margin-bottom: 50px;
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;
+    charset=utf8,%3Csvg xmlns='http: //www.w3.org/2000/svg' fill='%212121' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;
+    charset=utf8,%3Csvg xmlns='http: //www.w3.org/2000/svg' fill='%212121' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.carousel-indicators {
+    bottom: -60px;
+    li {
+        background-color: rgba(0,0,0,0.2);
+    }
+    .active {
+        background-color: rgba(0,0,0,0.8);
+    }
+}
+.carousel-inner {
+    margin: 0 auto;
+    width: 80%;
+}
+.quote-container {
+    height: 100%;
+    padding-bottom: 50px;
+    position: relative;
+    width: 100%;
+}
+.review-quote {
+    color: $review-quote-color;
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 0 8px 0 78px;
+    position: relative;
+    .fa-quote-left {
+        display: none;
+    }
+    p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+.review-img {
+    position: absolute;
+    @media(max-width:767px) {
+        top: 0;
+        left: 0;
+    }
+    img {
+        border-radius: 100%;
+        transition: all 0.3s ease 0s;
+        height: 70px;
+        width: 70px;
+    }
+}
+.review-author {
+    font-size: 14px;
+    position: relative;
+    padding-left: 78px;
+    position: absolute;
+    bottom: 28px;
+    left: 0;
+    width: 100%;
+    @media(max-width:767px) {
+        line-height: 16px;
+    }
+    a {
+        color: $review-link-color;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: bold;
+        text-decoration: none;
+        &:hover, &:focus {
+            color: $main-color;
+        }
+    }
+    span {
+        color: $review-txt-color;
+        display: inline-block;
+        width: 100%;
+    }
+}
+@media(min-width:768px) {
+    .quote-container {
+        background: $review-quote-bg;
+        //border: 1px solid #dfdfdf;
+        padding-bottom: 80px;
+    }
+    .review-quote {
+        background: $review-quote-bg;
+        padding: 20px 20px 32px 45px;
+        .fa-quote-left {
+            color: $review-quote-left-color;
+            display: block;
+            font-size: 30px;
+            position: absolute;
+            left: 12px;
+            top: 15px;
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+        }
+        p {
+            font-size: 17px;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+    .review-img {
+        position: absolute;
+        right: 12px;
+        bottom: 10px;
+        img {
+            border: 7px solid $review-img-bd;
+            border-radius: 100%;
+            //box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            transition: all 0.3s ease 0s;
+            height: 100px;
+            width: 100px;
+            &:hover {
+                border: 5px solid $main-color;
+                box-shadow: none;
+                transform: scale(1.05);
+            }
+        }
+    }
+    .review-author {
+        background: $review-author-bg;
+        border-top: 1px solid $review-author-bd;
+        height: 80px;
+        padding: 20px 110px 20px 15px;
+        bottom: 0;
+        &:before {
+            background: $review-quote-bg;
+            content: "";
+            height: 1px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+}
