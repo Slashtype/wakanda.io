@@ -11,20 +11,35 @@ This website is based on [Jekyll](https://jekyllrb.com/). It is hosted on Github
 #### Install Jekyll
 
 ```
-$ gem install jekyll
+$ gem install jekyll bundler
 ```
 
 #### Run the website
 
 ```
 $ cd wakanda.io
-$ jekyll serve
+$ bundle exec jekyll serve
 ```
+
 > **Note:** Jekyll generates the static site in the `_site` folder.
 
 ### Content edition
 
 - to add new entries in the main menu, edit `_data/menu.yml`
+- to edit home page content (headlines, paragraphs...), edit `_data/content.yml`
+
+## Release management
+
+- to set a new release (stable and preview versions), edit `js/main.js`:
+
+```
+var versionCommunityLink = { 
+    stable: "1.1.3",
+    preview: "2.0.1"
+};
+```
+
+Find advanced configuration options in `js/main.js`.
 
 ### Layout development 
 

@@ -1,18 +1,4 @@
 /*
- * Headline typing effect configuration
- */
-
-$(function() {
-    var options = {
-      stringsElement: $('#typed-strings'),
-      startDelay: 1500,
-      backDelay: 1000,
-      typeSpeed: 0
-    }
-    $(".typed-text").typed(options);
-});
-
-/*
  * Download Community Edition links configuration
  */
 
@@ -37,6 +23,19 @@ function communityLinks(stableOrPreview) {
     }
 }
 
+/*
+ * Headline typing effect configuration
+ */
+
+$(function() {
+    var options = {
+      stringsElement: $('#typed-strings'),
+      startDelay: 1500,
+      backDelay: 1000,
+      typeSpeed: 0
+    }
+    $(".typed-text").typed(options);
+});
 
 /*
  * Download button utils function
