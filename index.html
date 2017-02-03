@@ -48,7 +48,7 @@ layout: default
       {{site.data.content.toto}}
       {% for feature in site.data.content.features %}
       <div class="{{ feature.class }}">
-        <img class="img-fluid" src="img/{{ feature.img }}">
+        <img class="img-fluid" alt="{{ feature.img.alt }}" src="img/{{ feature.img.url }}">
         <p>{{ feature.p }}</p>
       </div>
       {% endfor %}

@@ -7,24 +7,35 @@ h2:
 
 features:
   - p: Open Source Platform
-    img: open-source.png
+    img:
+      url: open-source.png
+      alt: Open Source
     class: offset-lg-1 offset-md-2 col-lg-2 col-md-4
 
   - p: Connect to external DB or Web Service
-    img: data-source.png
+    img:
+      url: data-source.png
+      alt: Data Source
     class: col-lg-2 col-md-4
 
   - p: IDE Mac & Windows
-    img: mac-win.png
+    img:
+      url: mac-win.png
+      alt: macOS and Windows
     class: col-lg-2 col-md-4
 
   - p: Server On-Prem In the Cloud
-    img: premise-cloud.png
+    img:
+      url: premise-cloud.png
+      alt: On Premise and in the Cloud
     class: col-lg-2 col-md-4
 
   - p: Mobile Web Apps AngularJS & Ionic
-    img: mobile-apps.png
+    img:
+      url: mobile-apps.png
+      alt: Mobile Apps
     class: col-lg-2 col-md-4
+
 quotes:
   - p: Duis eget lacus lacus. <a href="#">Duis non nisi</a> ac lectus blandit maximus. Aenean convallis turpis et lectus elementum, et commodo urna iaculis.
     author:
