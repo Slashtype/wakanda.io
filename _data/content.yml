@@ -25,3 +25,31 @@ features:
   - p: Mobile Web Apps AngularJS & Ionic
     img: mobile-apps.png
     class: col-lg-2 col-md-4
+quotes:
+  - p: Duis eget lacus lacus. <a href="#">Duis non nisi</a> ac lectus blandit maximus. Aenean convallis turpis et lectus elementum, et commodo urna iaculis.
+    author:
+      name: Peter
+      username: "@PeterBot"
+      url: https://twitter.com/@PeterBot
+      img: http://placehold.it/150x150?text=Pic1
+
+  - p: Proin eu efficitur libero. Nunc <a href="#">aliquet</a> massa sit amet sodales sagittis. In ac vehicula arcu. Ut et arcu <a href="#">maximus</a>, dignissim ante non, porttitor nunc.
+    author:
+      name: Alice
+      username: "@hiAlice"
+      url: https://twitter.com/@HiAlice
+      img: http://placehold.it/150x150?text=Pic2
+
+  - p: Duis eget lacus lacus. <a href="#">Duis non nisi</a> ac lectus blandit maximus. Aenean convallis turpis et lectus elementum, et commodo urna iaculis.
+    author:
+      name: Peter
+      username: "@PeterBot"
+      url: https://twitter.com/@PeterBot
+      img: http://placehold.it/150x150?text=Pic3
+
+  - p: Proin eu efficitur libero. Nunc <a href="#">aliquet</a> massa sit amet sodales sagittis. In ac vehicula arcu. Ut et arcu <a href="#">maximus</a>, dignissim ante non, porttitor nunc.
+    author:
+      name: Alice
+      username: "@hiAlice"
+      url: https://twitter.com/@HiAlice
+      img: http://placehold.it/150x150?text=Pic4
