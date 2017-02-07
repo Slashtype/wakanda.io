@@ -53,8 +53,8 @@ a{
 }
 section {
   min-height: 200px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .highlighted {
@@ -83,29 +83,32 @@ h1{
 h2{
 	font-size: 2.8rem;
 	margin-bottom: 40px;
-	p {
-		margin: 0;
-		padding: 0;
-		line-height: 25px;
-	}
-	small {
-		font-size: 27%;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 300;
-		&, a {
-			color: $base-light-color;
-		} 
-		a {
-			text-decoration: underline;
-		}
-	}
 	@media(max-width: 640px){
 	font-size: 1.8rem;
+	}
+	&.with-legend {
+		margin-bottom: 0;
 	}
 }
 h3{
   font-size: 1.5rem;
-  text-align: center;
+}
+h4{
+  font-size: 1.2rem;
+}
+p.title-legend {
+	padding: 0;
+	margin-bottom: 40px;
+	line-height: 25px;
+	font-size: 80%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	&, a {
+		color: $base-light-color;
+	} 
+	a {
+		text-decoration: underline;
+	}
 }
 /**
  * Section Intro
@@ -120,7 +123,8 @@ h3{
  * Section Slideshow
  */
 #section-slideshow{
-	background-color: $light-bg;
+	background-color: $dark-bg;
+	color: $white-color;
 }
 
 /**
@@ -144,7 +148,7 @@ h3{
  * Section Download
  */
 #section-download{
-  background-color: $light-bg;
+	background-color: $light-bg;
 }
 
 /**
@@ -266,10 +270,10 @@ h3{
 }
 
 /**
- * Section Customers
+ * Section Quotes
  */
-#section-customers{
-	background-color: $light-bg;
+#section-quotes{
+	background-color: $white-color;
 }
 
 /**
@@ -396,7 +400,7 @@ h3{
     	}
 	}
 	.card-block{
-    padding: 0 0 1rem 0;
+    padding: 0 0 3rem 0;
 	}
 	.secondary-footer{
     background-color: $secondary-footer-bg;

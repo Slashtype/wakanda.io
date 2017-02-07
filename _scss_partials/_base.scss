@@ -2,9 +2,15 @@
 @import "variables";
 @import "buttons";
 
+/** Lib */
+@import "slick_theme";
+@import "gif_player";
+
 /** Sections **/
 @import "navigation";
 @import "headlines";
+@import "slideshow";
+@import "features";
 @import "download";
 @import "quotes";
 

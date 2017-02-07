@@ -1,0 +1,71 @@
+
+/**
+#strips :nth-child(2) {
+    width: 14%;
+    right: 0;
+    bottom: 40px;
+    background: #2be7ff
+}
+#strips :nth-child(3) {
+    width: 25%;
+    bottom: 0;
+    right: 0;
+    background: #a1ffc8
+}
+
+@media (min-width: 670px) {
+    #strips span {
+        height: 150px
+    }
+    #strips :nth-child(1) {
+        top: 0;
+        background: #4750ff
+    }
+    #strips :nth-child(2) {
+        width: 16.66667%;
+        top: 300px;
+        bottom: auto;
+        background: #0dcfff
+    }
+    #strips :nth-child(3) {
+        width: 33.33333%;
+        right: auto;
+        background: #11bdff
+    }
+}
+@media (min-width: 880px) {
+    #strips span {
+        height: 190px
+    }
+    #strips :nth-child(1) {
+        width: 33.33333%;
+        left: -16.66666%;
+        background: #53f
+    }
+    #strips :nth-child(2) {
+        width: 33.33333%;
+        top: 0;
+        left: 16.66666%;
+        right: auto;
+        background: #4553ff
+    }
+    #strips :nth-child(3) {
+        width: 33.33333%;
+        left: 49.99999%;
+        bottom: auto;
+        background: #4f40ff
+    }
+    #strips :nth-child(4) {
+        width: 33.33333%;
+        top: 380px;
+        right: -16.66666%;
+        background: #25ddf5
+    }
+    #strips :nth-child(5) {
+        width: 33.33333%;
+        bottom: 0;
+        background: #1fa2ff
+    }
+}
+
+*/

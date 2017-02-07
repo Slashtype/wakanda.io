@@ -45,8 +45,7 @@ layout: default
 <section id="section-features1">
   <div class="container">   
     <div class="row text-center">
-      {{site.data.content.toto}}
-      {% for feature in site.data.content.features %}
+      {% for feature in site.data.content.feature_highlights %}
       <div class="{{ feature.class }}">
         <img class="img-fluid" alt="{{ feature.img.alt }}" src="img/{{ feature.img.url }}">
         <p>{{ feature.p }}</p>
@@ -58,87 +57,6 @@ layout: default
         <h2>Features (part 1)</h2>
       </div>
     </div>
-    <div class="row hidden-xl-down">
-      <div class="col-xs-12 col-sm-4">
-        <div class="what-we-do-features">
-          <h3>
-            <span>
-              <i class="" aria-hidden="true"></i>
-            </span>
-            Feature 1
-          </h3>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting Donec pulvinar mi
-            sit amet viverra justo hendrerit.
-          </p>
-        </div> <!-- /.what-we-do-features -->
-        <div class="what-we-do-features">
-          <h3>
-            <span>
-              <i class="" aria-hidden="true"></i>
-            </span>
-            Feature 2
-          </h3>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting Donec pulvinar mi
-            sit amet viverra justo hendrerit.
-          </p>
-        </div> <!-- /.what-we-do-features -->
-        <div class="what-we-do-features">
-          <h3>
-            <span>
-             <i class="" aria-hidden="true"></i>
-            </span>
-            Feature 3
-          </h3>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting Donec pulvinar mi
-            sit amet viverra justo hendrerit.
-          </p>
-        </div> <!-- /.what-we-do-features -->
-      </div>
-      <div class="col-sm-4" id="device">
-
-      </div>
-      <div class="col-xs-12 col-sm-4">
-        <div class="what-we-do-features">
-          <h3>
-            <span>
-              <i class="" aria-hidden="true"></i>
-            </span>
-            Feature 3
-          </h3>
-          <p>
-            Lorem Ipsum is simply dummy <a href="">text of the printing</a> and typesetting Donec pulvinar mi
-            sit amet viverra justo hendrerit.
-          </p>
-        </div> <!-- /.what-we-do-features -->
-        <div class="what-we-do-features">
-          <h3>
-            <span>
-              <i class="" aria-hidden="true"></i>
-            </span>
-            Feature 4
-          </h3>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting Donec pulvinar mi
-            sit <a href="">amet viverra justo</a> hendrerit.
-          </p>
-        </div> <!-- /.what-we-do-features -->
-        <div class="what-we-do-features">
-          <h3>
-            <span>
-             <i class="" aria-hidden="true"></i>
-            </span>
-            Feature 5
-          </h3>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting Donec pulvinar mi
-            sit amet viverra justo hendrerit.
-          </p>
-        </div> <!-- /.what-we-do-features -->
-      </div>
-    </div>
   </div>
 </section>
 
@@ -146,36 +64,77 @@ layout: default
   #             Slideshow
   #==========================================================-->
 <section id="section-slideshow">
-  <div class="container">   
-    <div class="row text-center">
-      <div class="col-md-12">
-        <img class="img-fluid" src="http://placehold.it/800x500?text=Video+Slideshow">
-      </div>
+
+<div class="home-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div id="dots"></div>
+                <div class="slides">
+                    <div>
+                        <img class="gif" src="videos/templates.png" />
+                        <p class="caption">
+                            <a href="choose-templates.html">Create a new project from our seed templates.</a>
+                        </p>
+                    </div>
+                    <div class="hide-before-init">
+                        <img class="gif" src="videos/troubleshooting.png" />
+                        <p class="caption">
+                            <a href="installation.html">Easily configure the tool set you need.</a>
+                        </p>
+                    </div>
+                    <div class="hide-before-init">
+                        <img class="gif" src="videos/model.png" />
+                        <p class="caption">
+                            <a href="design-data-model.html">Design all your data visually.</a>
+                        </p>
+                    </div>
+                    <div class="hide-before-init">
+                        <img class="gif" src="videos/web.png" />
+                        <p class="caption">
+                            <a href="create-web-app.html">Start coding your web app in minutes.</a>
+                        </p>
+                    </div>
+                    <div class="hide-before-init">
+                        <img class="gif" src="videos/mobile.png" />
+                        <p class="caption">
+                            <a href="create-mobile-app.html">Simulate your mobile app in real-time.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>  
+</div>
+
 </section>
 
 
 <!--=========================================================
-  #             Feature 2
+  #             Features Details and What's New?
   #==========================================================-->
 <section id="section-features2">
   <div class="container">   
-    <div class="row text-center">
-      <div class="col-md-4">
-        <img class="img-fluid" src="http://placehold.it/400x300?text=Features+(Part+2)">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>{{ site.data.content.feature_details.column_left.h3 }}</h3>
+        {% for feature in site.data.content.feature_details.column_left.items %}
+          <div class="feature-block">
+            <img class="" alt="{{ feature.img.alt }}" src="img/{{ feature.img.url }}">
+            <h4>{{ feature.h4 }}</h4>
+            <p>{{ feature.p }}</p>  
+          </div> 
+        {% endfor %}
       </div>
-      <div class="col-md-4">
-        <img class="img-fluid" src="http://placehold.it/400x300?text=Features+(Part+2)">
-      </div>
-      <div class="col-md-4">
-        <img class="img-fluid" src="http://placehold.it/400x300?text=Features+(Part+2)">
-      </div>
-    </div>
-    <div class="row hidden-xl-down">
-      <div class="col-md-12">
-        <h2>Features (part 2)</h2>
-        <hr />
+      <div class="col-md-6">
+        <h3>{{ site.data.content.feature_details.column_right.h3 }}</h3>
+        {% for feature in site.data.content.feature_details.column_right.items %}
+          <div class="feature-block">
+            <img class="" alt="{{ feature.img.alt }}" src="img/{{ feature.img.url }}">
+            <h4>{{ feature.h4 }}</h4>
+            <p>{{ feature.p }}</p>  
+          </div> 
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -188,14 +147,10 @@ layout: default
   <div class="container">   
     <div class="row hidden-xs-down">
       <div class="col-md-12">
-        <h2>
-          <p>Choose your edition</p>
-          <p>
-            <small>
-              By downloading and using Wakanda, you agree to the <a href="http://www.wakanda.io/license">license terms</a> and the <a href="http://www.wakanda.io/acceptable-use-policy-aup">acceptable use policy</a>.
-            </small>
-          </p>
-        </h2>
+        <h2 class="with-legend">Choose your edition</h2>
+        <p class="title-legend">
+          By downloading and using Wakanda, you agree to the <a href="http://www.wakanda.io/license">license terms</a> and the <a href="http://www.wakanda.io/acceptable-use-policy-aup">acceptable use policy</a>.
+        </p>
         <table class="table table-striped production-table">
           <thead>
             <tr>
@@ -304,25 +259,10 @@ layout: default
   </div>
 </section>
 
-
 <!--=========================================================
-  #             What's new
+  #             Quotes
   #==========================================================-->
-<section id="section-news">
-  <div class="container">   
-    <div class="row">
-      <div class="col-md-12">
-        <h2>What’s New in Wakanda 2.0?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra ut tellus ac malesuada. Aenean sit amet risus vestibulum, pharetra arcu non, volutpat quam. Vivamus lacus lorem, ultricies sed neque sagittis, auctor efficitur augue. Curabitur fringilla vitae neque a ultricies. Aliquam tempus aliquet dui in gravida. Nulla viverra, mi non fermentum cursus, est leo pharetra erat, non tincidunt nibh mauris condimentum leo. Maecenas ornare sodales orci at rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; <a href="">Mauris pulvinar</a> convallis congue. Phasellus nec tellus eget.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--=========================================================
-  #             Customers and examples
-  #==========================================================-->
-<section id="section-customers">
+<section id="section-quotes">
   <div class="container">   
     <div class="row">
       <div class="col-md-12">
