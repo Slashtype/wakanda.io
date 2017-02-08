@@ -3,6 +3,11 @@
     -moz-box-shadow: inset 0px -10px 23px -4px black;
     box-shadow: inset 0px -10px 23px -4px black;
 
+    .container {
+        &, >div {
+            padding:0;
+        }
+    }
     .embed-video {
         position: relative;
         padding-bottom: 56.25%; /* 16:9 */
@@ -27,6 +32,9 @@
     }
     .carousel-indicators, .carousel-caption {
         position: static;
+    }
+    .carousel-caption {
+        padding: 0;
     }
     .carousel-control-prev {
         left: -100px;
@@ -65,7 +73,7 @@
 
     .caption {
         font-family: 'MyriadProSemibold';
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         @media(max-width: 640px){
             font-size: 1rem;
         }
@@ -177,9 +185,8 @@
 
     .slick-dots, ol {
         margin: auto;
-        font-size: 15px;
+        font-size: 1.2rem;
         height: 50px;
-
         li {
         width: auto;
         height: auto;
@@ -206,11 +213,35 @@
         }
 
         &.slick-active span, &.active span {
+            
             border: 1px solid $highlighted-color;
             color: $white-color;
         }
         }
-
+        @media (max-width: 480px) {
+            height: 75px;
+            li {
+                font-size: 70%;
+                margin: 0;
+                margin-bottom: 14px;
+                span {
+                    padding: .2em .4em .2em;
+                }
+            }
+        }
+        @media (max-width: 768px) {
+            height: 80px;
+        }
+        @media (max-width: 992px) {
+            li {
+                font-size: 80%;
+                margin: 0 2px;
+                margin-bottom: 10px;
+                span {
+                    padding: .3em .5em .3em;
+                }
+            }
+        }
         li.secondary {
         span {
             font-weight: 100;

@@ -66,8 +66,7 @@ layout: default
 
 <section id="section-slideshow">
     <div class="container">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
+            <div class="col-md-10 offset-md-1">
               <div id="slideshow" class="carousel slide" data-ride="carousel" data-interval="false">
                 <ol class="carousel-indicators">
                   {% for item in site.data.content.slideshow %}
@@ -82,7 +81,7 @@ layout: default
                       <div class="embed-video d-block img-fluid">
                         <iframe src="https://player.vimeo.com/video/{{item.video.id}}?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                       </div>
-                      <div class="carousel-caption d-none d-md-block">
+                      <div class="carousel-caption">
                         <h3><a href="{{ item.url }}">{{ item.title }}</a></h3>
                       </div>
                   </div>
