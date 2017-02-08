@@ -53,8 +53,8 @@ a{
 }
 section {
   min-height: 200px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .highlighted {
@@ -106,7 +106,6 @@ h2{
 h3{
   font-size: 1.5rem;
   text-align: center;
-}
 /**
  * Section Intro
  */
@@ -123,16 +122,21 @@ h3{
 	background-color: $light-bg;
 }
 
+#section-headline, #section-feature-highlights {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
 /**
  * Section Features
  */
-#section-features1{
+#section-feature-highlights{
   	background-color: white;
 	img {
 		max-height: 40px;
 	}
 }
-#section-features2{
+#section-feature-details{
 	background-color: white;
 
 }

@@ -1,11 +1,12 @@
 h1: Develop and Run Web & Mobile Apps
+
 h2: 
   prefix: Full-Stack JavaScript Platform for
   typing:
     - <strong>AngularJS 1<span class="highlighted"> &plus; </span>Ionic 1</strong>
     - <strong>TypeScript<span class="highlighted"> &plus; </span>Angular 2<span class="highlighted"> &plus; </span>Ionic 2</strong>
 
-features:
+feature_highlights:
   - p: Open Source Platform
     img:
       url: open-source.png
@@ -35,6 +36,56 @@ features:
       url: mobile-apps.png
       alt: Mobile Apps
     class: col-lg-2 col-md-4
+
+feature_details:
+
+  column_left:
+    h3: One Platform to...
+    items:
+      - h4: Develop faster
+        p: All-in-one IDE, Templating, bootstrap your project in few minutes, full Angular integration with Backend, Ionic to develop Hybrid Apps.
+        img:
+          url: prototype.png
+          alt: Prototype
+
+      - h4: Save time
+        p: One click installation, Built-in DB with advanced Designer, Server in the Cloud, Ready to use connectors to any external DB and Reuse your backend modules.
+        img:
+          url: boost.png
+          alt: Boost
+
+      - h4: Integrate and secure your data
+        p: "A JavaScript Abstract Layer to integrate any data in JavaScript: Web Service, Relational DB, Built-in DB."
+        img:
+          url: integrate.png
+          alt: Integrate
+
+      - h4: Build & Run Cross-Platform Apps
+        p: Develop and Run Web Apps and Hybrid or Native Mobile Apps. Your server on-prem or in the Cloud.
+        img:
+          url: omnichannel.png
+          alt: Omnichannel
+
+  column_right:
+    h3: New in Wakanda 2.0
+    items:
+      - h4: TypeScript support
+        p: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra ut tellus ac malesuada. Aenean sit amet risus vestibulum, pharetra arcu non, volutpat quam.
+        img:
+          url: ts.svg
+          alt: Integrate
+
+      - h4: Angular 2 support
+        p: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra ut tellus ac malesuada. Aenean sit amet risus vestibulum, pharetra arcu non, volutpat quam.
+        img:
+          url: angular2.svg
+          alt: Integrate
+
+      - h4: Ionic 2 support
+        p: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra ut tellus ac malesuada. Aenean sit amet risus vestibulum, pharetra arcu non, volutpat quam.
+        img:
+          url: ionic2.png
+          alt: Integrate
 
 quotes:
   - p: Duis eget lacus lacus. <a href="#">Duis non nisi</a> ac lectus blandit maximus. Aenean convallis turpis et lectus elementum, et commodo urna iaculis.

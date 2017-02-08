@@ -31,9 +31,9 @@ $height-7: 134px;
     }
 }
 
-#section-slideshow, #section-features1 {
+#section-slideshow, #section-feature-highlights, #section-feature-details {
     position: relative;
-    z-index: 10
+    z-index: 10;
 }
 
 #strips :nth-child(1) {
