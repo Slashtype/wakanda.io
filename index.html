@@ -47,7 +47,7 @@ layout: default
     <div class="row text-center">
       {% for feature in site.data.content.feature_highlights %}
       <div class="{{ feature.class }}">
-        <img class="img-fluid" alt="{{ feature.img.alt }}" src="img/{{ feature.img.url }}">
+        <img class="img-fluid" alt="{{ feature.img.alt }}" src="{{ feature.img.url }}">
         <p>{{ feature.p }}</p>
       </div>
       {% endfor %}
@@ -120,7 +120,7 @@ layout: default
         <h3>{{ site.data.content.feature_details.column_left.h3 }}</h3>
         {% for feature in site.data.content.feature_details.column_left.items %}
           <div class="feature-block">
-            <img class="" alt="{{ feature.img.alt }}" src="img/{{ feature.img.url }}">
+            <img class="" alt="{{ feature.img.alt }}" src="{{ feature.img.url }}">
             <h4>{{ feature.h4 }}</h4>
             <p>{{ feature.p }}</p>  
           </div> 
@@ -130,7 +130,7 @@ layout: default
         <h3>{{ site.data.content.feature_details.column_right.h3 }}</h3>
         {% for feature in site.data.content.feature_details.column_right.items %}
           <div class="feature-block">
-            <img class="" alt="{{ feature.img.alt }}" src="img/{{ feature.img.url }}">
+            <img class="" alt="{{ feature.img.alt }}" src="{{ feature.img.url }}">
             <h4>{{ feature.h4 }}</h4>
             <p>{{ feature.p }}</p>  
           </div> 

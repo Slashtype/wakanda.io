@@ -9,31 +9,31 @@ h2:
 feature_highlights:
   - p: Open Source Platform
     img:
-      url: open-source.png
+      url: img/open-source.png
       alt: Open Source
     class: offset-lg-1 offset-md-2 col-lg-2 col-md-4
 
   - p: Connect to external DB or Web Service
     img:
-      url: data-source.png
+      url: img/data-source.png
       alt: Data Source
     class: col-lg-2 col-md-4
 
   - p: IDE Mac & Windows
     img:
-      url: mac-win.png
+      url: img/mac-win.png
       alt: macOS and Windows
     class: col-lg-2 col-md-4
 
   - p: Server On-Prem In the Cloud
     img:
-      url: premise-cloud.png
+      url: img/premise-cloud.png
       alt: On Premise and in the Cloud
     class: col-lg-2 col-md-4
 
   - p: Mobile Web Apps AngularJS & Ionic
     img:
-      url: mobile-apps.png
+      url: img/mobile-apps.png
       alt: Mobile Apps
     class: col-lg-2 col-md-4
 
@@ -45,25 +45,25 @@ feature_details:
       - h4: Develop faster
         p: All-in-one IDE, Templating, bootstrap your project in few minutes, full Angular integration with Backend, Ionic to develop Hybrid Apps.
         img:
-          url: prototype.png
+          url: img/prototype.png
           alt: Prototype
 
       - h4: Save time
         p: One click installation, Built-in DB with advanced Designer, Server in the Cloud, Ready to use connectors to any external DB and Reuse your backend modules.
         img:
-          url: boost.png
+          url: img/boost.png
           alt: Boost
 
       - h4: Integrate and secure your data
         p: "A JavaScript Abstract Layer to integrate any data in JavaScript: Web Service, Relational DB, Built-in DB."
         img:
-          url: integrate.png
+          url: img/integrate.png
           alt: Integrate
 
       - h4: Build & Run Cross-Platform Apps
         p: Develop and Run Web Apps and Hybrid or Native Mobile Apps. Your server on-prem or in the Cloud.
         img:
-          url: omnichannel.png
+          url: img/omnichannel.png
           alt: Omnichannel
 
   column_right:
@@ -72,19 +72,19 @@ feature_details:
       - h4: TypeScript support
         p: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra ut tellus ac malesuada. Aenean sit amet risus vestibulum, pharetra arcu non, volutpat quam.
         img:
-          url: ts.svg
+          url: img/ts.svg
           alt: Integrate
 
       - h4: Angular 2 support
         p: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra ut tellus ac malesuada. Aenean sit amet risus vestibulum, pharetra arcu non, volutpat quam.
         img:
-          url: angular2.svg
+          url: img/angular2.svg
           alt: Integrate
 
       - h4: Ionic 2 support
         p: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra ut tellus ac malesuada. Aenean sit amet risus vestibulum, pharetra arcu non, volutpat quam.
         img:
-          url: ionic2.png
+          url: img/ionic2.png
           alt: Integrate
 
 quotes:
