@@ -57,48 +57,6 @@ layout: default
         <h2>Features (part 1)</h2>
       </div>
     </div>
-      </div>
-
-      </div>
-      <div class="col-xs-12 col-sm-4">
-        <div class="what-we-do-features">
-          <h3>
-            <span>
-              <i class="" aria-hidden="true"></i>
-            </span>
-            Feature 3
-          </h3>
-          <p>
-            Lorem Ipsum is simply dummy <a href="">text of the printing</a> and typesetting Donec pulvinar mi
-            sit amet viverra justo hendrerit.
-          </p>
-        </div> <!-- /.what-we-do-features -->
-        <div class="what-we-do-features">
-          <h3>
-            <span>
-              <i class="" aria-hidden="true"></i>
-            </span>
-            Feature 4
-          </h3>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting Donec pulvinar mi
-            sit <a href="">amet viverra justo</a> hendrerit.
-          </p>
-        </div> <!-- /.what-we-do-features -->
-        <div class="what-we-do-features">
-          <h3>
-            <span>
-             <i class="" aria-hidden="true"></i>
-            </span>
-            Feature 5
-          </h3>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting Donec pulvinar mi
-            sit amet viverra justo hendrerit.
-          </p>
-        </div> <!-- /.what-we-do-features -->
-      </div>
-    </div>
   </div>
 </section>
 
@@ -106,13 +64,49 @@ layout: default
   #             Slideshow
   #==========================================================-->
 <section id="section-slideshow">
-  <div class="container">   
-    <div class="row text-center">
-      <div class="col-md-12">
-        <img class="img-fluid" src="http://placehold.it/800x500?text=Video+Slideshow">
-      </div>
+
+<div class="home-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div id="dots"></div>
+                <div class="slides">
+                    <div>
+                        <img class="gif" src="videos/templates.png" />
+                        <p class="caption">
+                            <a href="choose-templates.html">Create a new project from our seed templates.</a>
+                        </p>
+                    </div>
+                    <div class="hide-before-init">
+                        <img class="gif" src="videos/troubleshooting.png" />
+                        <p class="caption">
+                            <a href="installation.html">Easily configure the tool set you need.</a>
+                        </p>
+                    </div>
+                    <div class="hide-before-init">
+                        <img class="gif" src="videos/model.png" />
+                        <p class="caption">
+                            <a href="design-data-model.html">Design all your data visually.</a>
+                        </p>
+                    </div>
+                    <div class="hide-before-init">
+                        <img class="gif" src="videos/web.png" />
+                        <p class="caption">
+                            <a href="create-web-app.html">Start coding your web app in minutes.</a>
+                        </p>
+                    </div>
+                    <div class="hide-before-init">
+                        <img class="gif" src="videos/mobile.png" />
+                        <p class="caption">
+                            <a href="create-mobile-app.html">Simulate your mobile app in real-time.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>  
+</div>
+
 </section>
 
 
@@ -129,7 +123,7 @@ layout: default
             <img class="" alt="{{ feature.img.alt }}" src="img/{{ feature.img.url }}">
             <h4>{{ feature.h4 }}</h4>
             <p>{{ feature.p }}</p>  
-      </div>
+          </div> 
         {% endfor %}
       </div>
       <div class="col-md-6">
@@ -139,7 +133,7 @@ layout: default
             <img class="" alt="{{ feature.img.alt }}" src="img/{{ feature.img.url }}">
             <h4>{{ feature.h4 }}</h4>
             <p>{{ feature.p }}</p>  
-    </div>
+          </div> 
         {% endfor %}
       </div>
     </div>
@@ -155,8 +149,8 @@ layout: default
       <div class="col-md-12">
         <h2 class="with-legend">Choose your edition</h2>
         <p class="title-legend">
-              By downloading and using Wakanda, you agree to the <a href="http://www.wakanda.io/license">license terms</a> and the <a href="http://www.wakanda.io/acceptable-use-policy-aup">acceptable use policy</a>.
-          </p>
+          By downloading and using Wakanda, you agree to the <a href="http://www.wakanda.io/license">license terms</a> and the <a href="http://www.wakanda.io/acceptable-use-policy-aup">acceptable use policy</a>.
+        </p>
         <table class="table table-striped production-table">
           <thead>
             <tr>
