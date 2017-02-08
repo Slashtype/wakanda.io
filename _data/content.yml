@@ -87,6 +87,33 @@ feature_details:
           url: img/ionic2.png
           alt: Integrate
 
+slideshow:
+    # GIF player automatically pick the GIF version ("videos/templates.gif"" in the following example)
+  - img: videos/templates.png
+    a:
+      title: Create a new project from our seed templates.
+      url: https://wakanda.github.io/wakanda-studio/choose-templates.html
+
+  - img: videos/troubleshooting.png
+    a:
+      title: Easily configure the tool set you need.
+      url: https://wakanda.github.io/wakanda-studio/installation.html
+
+  - img: videos/model.png
+    a:
+      title: Design all your data visually.
+      url: https://wakanda.github.io/wakanda-studio/design-data-model.html
+
+  - img: videos/web.png
+    a: 
+      title: Start coding your web app in minutes.
+      url: https://wakanda.github.io/wakanda-studio/create-web-app.html
+  
+  - img: videos/mobile.png
+    a:
+      title: Simulate your mobile app in real-time.
+      url: https://wakanda.github.io/wakanda-studio/create-mobile-app.html
+
 quotes:
   - p: Duis eget lacus lacus. <a href="#">Duis non nisi</a> ac lectus blandit maximus. Aenean convallis turpis et lectus elementum, et commodo urna iaculis.
     author:
