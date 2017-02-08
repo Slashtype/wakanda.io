@@ -63,30 +63,44 @@ layout: default
 <!--=========================================================
   #             Slideshow
   #==========================================================-->
-<section id="section-slideshow">
 
-<div class="home-header">
+<section id="section-slideshow">
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
-                <div id="dots"></div>
-                <div class="slides">
-                    {% for video in site.data.content.slideshow %}
-                    <div>
-                        <img class="gif" src="{{ video.img }}" />
-                        <p class="caption">
-                            <a href="{{ video.a.url }}">{{ video.a.title }}</a>
-                        </p>
-                    </div>
-                    {% endfor %}
+              <div id="slideshow" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                  {% for item in site.data.content.slideshow %}
+                  <li data-target="#slideshow" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}>
+                    <span>{{ item.btn }}</span>
+                  </li>
+                  {% endfor %}
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                  {% for item in site.data.content.slideshow %}
+                  <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                      <div class="embed-video d-block img-fluid">
+                        <iframe src="https://player.vimeo.com/video/{{item.video.id}}?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                      </div>
+                      <div class="carousel-caption d-none d-md-block">
+                        <h3><a href="{{ item.url }}">{{ item.title }}</a></h3>
+                      </div>
+                  </div>
+                  {% endfor %}
                 </div>
+                <a class="carousel-control-prev" href="#slideshow" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#slideshow" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
             </div>
         </div>
     </div>
-</div>
-
 </section>
-
 
 <!--=========================================================
   #             Features Details and Release Notes

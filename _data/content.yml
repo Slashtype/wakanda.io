@@ -89,30 +89,40 @@ feature_details:
 
 slideshow:
     # GIF player automatically pick the GIF version ("videos/templates.gif"" in the following example)
-  - img: videos/templates.png
-    a:
-      title: Create a new project from our seed templates.
-      url: https://wakanda.github.io/wakanda-studio/choose-templates.html
+  - video: 
+      id: 203100606
+      alt: Templates
+    btn: <i class="fa fa-magic" aria-hidden="true"></i> Templates
+    title: Create a new project from our seed templates.
+    url: https://wakanda.github.io/wakanda-studio/choose-templates.html
 
-  - img: videos/troubleshooting.png
-    a:
-      title: Easily configure the tool set you need.
-      url: https://wakanda.github.io/wakanda-studio/installation.html
+  - video:
+      id: 203101413
+      alt: Trobleshooting
+    btn: <i class="fa fa-cog" aria-hidden="true"></i> Setup
+    title: Easily configure the tool set you need.
+    url: https://wakanda.github.io/wakanda-studio/installation.html
 
-  - img: videos/model.png
-    a:
-      title: Design all your data visually.
-      url: https://wakanda.github.io/wakanda-studio/design-data-model.html
+  - video:
+      id: 203107444
+      alt: Data Model
+    btn: <i class="fa fa-database" aria-hidden="true"></i> Data model
+    title: Design all your data visually.
+    url: https://wakanda.github.io/wakanda-studio/design-data-model.html
 
-  - img: videos/web.png
-    a: 
-      title: Start coding your web app in minutes.
-      url: https://wakanda.github.io/wakanda-studio/create-web-app.html
+  - video:
+      id: 203101815
+      alt: Web
+    btn: <i class="fa fa-laptop" aria-hidden="true"></i> Web app
+    title: Start coding your web app in minutes.
+    url: https://wakanda.github.io/wakanda-studio/create-web-app.html
   
-  - img: videos/mobile.png
-    a:
-      title: Simulate your mobile app in real-time.
-      url: https://wakanda.github.io/wakanda-studio/create-mobile-app.html
+  - video:
+      id: 203102094
+      alt: Mobile
+    btn: <i class="fa fa-mobile" aria-hidden="true"></i> Mobile app
+    title: Simulate your mobile app in real-time.
+    url: https://wakanda.github.io/wakanda-studio/create-mobile-app.html
 
 quotes:
   - p: Duis eget lacus lacus. <a href="#">Duis non nisi</a> ac lectus blandit maximus. Aenean convallis turpis et lectus elementum, et commodo urna iaculis.
