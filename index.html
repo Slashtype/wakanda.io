@@ -126,6 +126,11 @@ layout: default
             <p>{{ feature.p }}</p>  
           </div> 
         {% endfor %}
+      <div class="mailing">
+        <h4>{{ site.data.content.mail_form.title }}</h4>
+        <p>{{ site.data.content.mail_form.p }}</p>
+        {% include mail_form.html %} 
+      </div>
       </div>
     </div>
   </div>

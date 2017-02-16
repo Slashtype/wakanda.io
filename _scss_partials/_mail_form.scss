@@ -1,0 +1,30 @@
+.mailing {
+    margin: 3.4rem 0 1rem;
+    form {
+        text-align: left;
+    }
+    .clear {
+        display: inline-block;
+    }
+    .btn {
+        padding: 0.8rem 2.5rem;
+    }
+    input.email {
+        background-color: $input-bg;
+        border: none;
+        border-radius: 4px;
+        padding-left: 10px;
+        height: 2.8rem;
+        width: 280px;
+        color: $input-color;
+    }
+    #mce-responses {
+        margin-top: 20px;
+        #mce-success-response {
+            color: $highlighted-color;
+        }
+        #mce-error-response {
+            color: $secondary-color;
+        }
+    }
+}

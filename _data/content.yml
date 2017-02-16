@@ -152,3 +152,6 @@ quotes:
       username: "@hiAlice"
       url: https://twitter.com/@HiAlice
       img: http://placehold.it/150x150?text=Pic4
+mail_form:
+  title: Wakanda 2.0.0 is coming soon!
+  p: "Enter your email to be added to the invite list:"
