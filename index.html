@@ -330,47 +330,32 @@ layout: default
 <!--=========================================================
   #             Wakanda Community
   #==========================================================-->
-<section id="section-mailing">
+<section id="section-community">
   <div class="container">   
     <div class="row">
       <div class="col-md-12">
-        <h2>Wakanda Community</h2>
         <div class="row"> 
-          <div class="col-md-6 col-lg-5"> 
-            <div class="mailing">
-              <form id="mailing-form" name="mailing-form" action="" method="post">
-                  <input name="ml-name" id="ml-name" type="text" placeholder="Email Address" />
-                  <button type="submit" name="ml-go" id="ml-go">Subscribe</button>
-              </form> 
-            </div>
-            <div class="alert alert-danger" style="display:none">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <span class="icon-warning-sign"></span>  <strong>Error</strong> – Please enter required fields
-            </div>    
-            <div class="alert alert-success" style="display:none">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <span class="icon-flag"></span>  <strong>Success</strong> – Form successfully sent ! 
-            </div>
+          <div class="col-md-6"> 
+       
+                                   <h3>Join the community on <a href="https://gitter.im/wakandasoft/Lobby">Gitter</a></h3>
+            <a href="https://gitter.im/wakandasoft/Lobby">
+              <img class="img-fluid" src="img/gitter.png" alt="Gitter Community" />
+            </a>
           </div>
-          <div class="col-md-6 offset-lg-1">
-            <div class="community-text">
-              We have a great new community on Gitter 
-              <a class="community-link highlighted-link" href="https://gitter.im/wakandasoft/Lobby">
-                <span class="btn"> Start talking with us</span>
-              </a> 
-              <a class="community-link" href="http://stackoverflow.com/questions/tagged/wakanda">
-                <i class="fa fa-stack-overflow"></i> Ask questions on Stackoverflow
-              </a> 
-              <a class="community-link" href="https://github.com/Wakanda/wakanda-issues/issues">
-                <i class="fa fa-github"></i> Report issues, request new features on Github
+          <div class="col-md-6">
+     <h3>Learn more</h3>
+            {% for link in site.data.content.community %}
+            <p>
+              <a class="btn btn-success" href="{{ link.url }}">
+                <i class="{{ link.icon }}"></i> {{ link.title }}
               </a>
-            </div> <!-- /.community-text -->
-          </div> 
-         </div> <!-- /.row-->
-
+            </p>
+            {% endfor %}
+          </div>
+         </div>
       </div>
-    </div> <!-- /.row-->
-  </div>   <!-- /.container-->     
+    </div>
+  </div>
 </section>
 
 <!--=========================================================
