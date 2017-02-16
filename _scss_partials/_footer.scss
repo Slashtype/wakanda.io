@@ -24,11 +24,6 @@
         margin: 0 0 15px;
         text-align: left;
         text-transform: uppercase;
-        @media (max-width:640px) {
-            margin: 0;
-            font-weight: 400;
-            font-size: 0.8rem;
-        }
     }
     ul {
         list-style-type: none;
@@ -113,9 +108,14 @@
                 border-bottom: none;
                 margin-bottom: 0;
                 padding: 0;
-                h3 {
-                    padding: 1rem 1.25rem;
-                    margin: 0;
+                h5 {
+                    line-height: 2;
+                }
+                a {
+                    padding-left: 1.25rem;
+                    font-weight: 400;
+                    font-size: 0.7rem;
+                    text-transform: uppercase;
                 }
             }
             .card-block {

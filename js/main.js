@@ -86,6 +86,7 @@ var platform = getPlatform();
 $(".platform-name").append(platformNames[getPlatform()]);
 $("#version-stable").append(versionCommunityLink.stable);
 $("#version-preview").append(versionCommunityLink.preview);
+$("#community-dl").attr('href', stableLinks[platform]);
 
 for (var key in platformNames) {
     document.createElement("td", document.createElement)
