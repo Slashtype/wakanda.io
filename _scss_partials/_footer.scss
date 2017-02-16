@@ -1,18 +1,18 @@
 #footer {
-    background-color: $footer-bg;
-    color: $footer-color;
+    background-color: $dark-bg;
+    color: $white-color;
     font-size: 0.82rem;
     overflow: hidden;
     padding: 3rem 0 0;
     @media (max-width:768px) {
         background-color: #fff;
-        color: $base-light-bg-color;
+        color: $base-color;
         padding: 0;
     }
     a {
-        color: $footer-link-color;
-        @media (max-width:640px) {
-            color: $base-light-bg-color;
+        color: $base-light-color;
+        @media (max-width:768px) {
+            color: $base-color;
         }
         &:hover, &:focus, &:active {
             color: $main-color;
@@ -49,14 +49,14 @@
         padding: 0 0 3rem 0;
     }
     .secondary-footer {
-        background-color: $secondary-footer-bg;
+        background-color: $dark-bg-transition;
         clear: both;
         height: 3.125rem;
         margin-top: 1rem;
         min-height: 3.125rem;
         overflow: hidden;
         @media (max-width:768px) {
-            background-color: $secondary-footer-mb-bg;
+            background-color: $light-bg;
             margin-top: 0;
         }
     }
@@ -85,7 +85,7 @@
             .fa {
                 font-size: 1.2rem;
                 @media (max-width:640px) {
-                    color: $secondary-footer-mb-link-color;
+                    color: $base-light-color;
                 }
             }
         }

@@ -1,13 +1,6 @@
-$link-color: #188CBA;
-$link-hover-color: #2fb0e3;
-$secondary-link-color: #FFC600;
-$secondary-link-hover-color: #fbbd00;
-
-$title-color: #212121;
-
 /**
-* General theme colors
-*/
+ * Color
+ */
 $white-color: white;
 $base-color: #212121;
 $base-light-color: #9ab3c5;
@@ -18,26 +11,21 @@ $variant-color: #E93434;
 $highlighted-color: #00D5AC;
 $highlighted-color-transition: #2EBCA1;
 
+/**
+ * Background
+ */
 $dark-bg: #232A33;
+$dark-bg-transition: #363f4b;
 $darker-bg: #2c2c2c;
 $light-bg: #f0f4f7;
 $light-bg-transition: #DBE4EB;
 $light-bg-transition-variant: #f8f7f7;
 $light-bg-color: #8a8b8c;
 $highlighted-bg: #00D5AC;
-$highlighted-bg-color: #fff;
-$footer-bg: #232A33;
-$footer-color: #fff;
-$footer-link-color: #727e8d;
-$secondary-footer-bg: #363f4b;
-$secondary-footer-mb-bg: rgba(0, 0, 0, 0.05);
-$secondary-footer-mb-link-color: #aaa;
 
-$secondary-dark-bg-color: #859bb7;
-
-$base-light-bg-color: #212121;
-$secondary-light-bg-color: #555555;
-
+/**
+ * Buttons and links
+ */
 $btn-vav-color: #253039;
 $btn-default-bg: #ffc600;
 $btn-default-hover-bg: #fbbd00;
@@ -56,13 +44,19 @@ $btn-dark-bg: #212121;
 $btn-dark-hover-bg: #4a4949;
 $btn-dark-color: #fff;
 
+$link-color: #188CBA;
+$link-hover-color: #2fb0e3;
+$secondary-link-color: #FFC600;
+$secondary-link-hover-color: #fbbd00;
+
+/**
+ * Misc
+ */
 $input-bg: #fff;
 $input-bd: #ebebeb;
-
-$highlighted-item-mobile: #1d2229;
+$input-color: #c3c3c3;
 
 $table-odd: rgba(0, 0, 0, 0.05);
 $table-even: #fff;
 
-$input-color: #c3c3c3;
-$event-subtitle-color: #868484;
+

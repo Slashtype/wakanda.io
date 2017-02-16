@@ -117,7 +117,7 @@
 .mobile-main-nav{
   animation: mobile;
   animation-duration: 0.2s;
-  background: $highlighted-item-mobile;
+  background: $btn-dark-bg;
   display: none;
   position: fixed;
   top: 0;
@@ -141,7 +141,6 @@
   .close-main-nav{
     animation: close;
     animation-duration: .5s;
-    //color: $base-color;
     color: $white-color;
     float: right;
     font-size: 3rem;
@@ -164,7 +163,7 @@
       padding-left: 45px;
       background: $dark-bg;
       &.highlighted-item{
-        background: $highlighted-item-mobile;
+        background: $btn-dark-bg;
       }
       &:nth-of-type(2) a{
         animation-delay: -0.8s;
