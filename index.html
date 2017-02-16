@@ -68,6 +68,7 @@ layout: default
     <div class="container">
             <div class="col-md-10 offset-md-1">
               <div id="slideshow" class="carousel slide" data-ride="carousel" data-interval="false">
+                {% if site.data.content.slideshow.size > 1 %}
                 <ol class="carousel-indicators">
                   {% for item in site.data.content.slideshow %}
                   <li data-target="#slideshow" data-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active"{% endif %}>
@@ -75,6 +76,7 @@ layout: default
                   </li>
                   {% endfor %}
                 </ol>
+                {% endif %} 
                 <div class="carousel-inner" role="listbox">
                   {% for item in site.data.content.slideshow %}
                   <div class="carousel-item {% if forloop.first %}active{% endif %}">
@@ -87,6 +89,7 @@ layout: default
                   </div>
                   {% endfor %}
                 </div>
+                {% if site.data.content.slideshow.size > 1 %}
                 <a class="carousel-control-prev" href="#slideshow" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
@@ -95,6 +98,7 @@ layout: default
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
+                {% endif %}
               </div>
             </div>
         </div>
@@ -265,12 +269,14 @@ layout: default
       <div class="col-md-12">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
+            {% if site.data.content.quotes.size > 2 %}
             {% for quote in site.data.content.quotes %}
             {% assign modulo = forloop.index0 | modulo: 2 %}
             {% if modulo == 0 %}
             <li data-target="#carouselExampleIndicators" data-slide-to="{{ forloop.index0 | divided_by: 2}}" {% if forloop.first %}class="active"{% endif %}></li>
             {% endif %}
             {% endfor %}
+            {% endif %}
           </ol>
           <div class="carousel-inner" role="listbox">
             {% for quote in site.data.content.quotes %}
@@ -300,10 +306,11 @@ layout: default
                 </div>
             {% if modulo == 1 or forloop.last %}
               </div>
-                </div>
+            </div>
             {% endif %}
             {% endfor %}
-              </div>
+          </div>
+          {% if site.data.content.quotes.size > 2 %}
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -312,7 +319,8 @@ layout: default
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
-        </div> <!-- /.carousel -->
+          {% endif %} 
+        </div>
       </div>
     </div>
   </div>

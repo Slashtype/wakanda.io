@@ -89,41 +89,13 @@ feature_details:
           alt: Integrate
 
 slideshow:
-    # GIF player automatically pick the GIF version ("videos/templates.gif"" in the following example)
   - video: 
       id: 203100606
       alt: Templates
-    btn: <i class="fa fa-magic" aria-hidden="true"></i> Templates
+    # If have more than one video, you can define navigation buttons like this:
+    # btn: <i class="fa fa-magic" aria-hidden="true"></i> Templates
     title: Create a new project from our seed templates.
     url: https://wakanda.github.io/wakanda-studio/choose-templates.html
-
-  - video:
-      id: 203101413
-      alt: Trobleshooting
-    btn: <i class="fa fa-cog" aria-hidden="true"></i> Setup
-    title: Easily configure the tool set you need.
-    url: https://wakanda.github.io/wakanda-studio/installation.html
-
-  - video:
-      id: 203107444
-      alt: Data Model
-    btn: <i class="fa fa-database" aria-hidden="true"></i> Data model
-    title: Design all your data visually.
-    url: https://wakanda.github.io/wakanda-studio/design-data-model.html
-
-  - video:
-      id: 203101815
-      alt: Web
-    btn: <i class="fa fa-laptop" aria-hidden="true"></i> Web app
-    title: Start coding your web app in minutes.
-    url: https://wakanda.github.io/wakanda-studio/create-web-app.html
-  
-  - video:
-      id: 203102094
-      alt: Mobile
-    btn: <i class="fa fa-mobile" aria-hidden="true"></i> Mobile app
-    title: Simulate your mobile app in real-time.
-    url: https://wakanda.github.io/wakanda-studio/create-mobile-app.html
 
 quotes:
   - p: Duis eget lacus lacus. <a href="#">Duis non nisi</a> ac lectus blandit maximus. Aenean convallis turpis et lectus elementum, et commodo urna iaculis.
@@ -139,20 +111,8 @@ quotes:
       username: "@hiAlice"
       url: https://twitter.com/@HiAlice
       img: http://placehold.it/150x150?text=Pic2
+  # You can set more than 2 quotes, a carousel will automatically be used.
 
-  - p: Duis eget lacus lacus. <a href="#">Duis non nisi</a> ac lectus blandit maximus. Aenean convallis turpis et lectus elementum, et commodo urna iaculis.
-    author:
-      name: Peter
-      username: "@PeterBot"
-      url: https://twitter.com/@PeterBot
-      img: http://placehold.it/150x150?text=Pic3
-
-  - p: Proin eu efficitur libero. Nunc <a href="#">aliquet</a> massa sit amet sodales sagittis. In ac vehicula arcu. Ut et arcu <a href="#">maximus</a>, dignissim ante non, porttitor nunc.
-    author:
-      name: Alice
-      username: "@hiAlice"
-      url: https://twitter.com/@HiAlice
-      img: http://placehold.it/150x150?text=Pic4
 mail_form:
   title: Wakanda 2.0.0 is coming soon!
   p: "Enter your email to be added to the invite list:"
