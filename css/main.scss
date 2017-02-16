@@ -11,7 +11,6 @@
   			url("../font/MyriadProSemibold.woff") format("woff"),
   			url("../font/MyriadProSemibold.ttf") format("truetype");
 }
-
 html{
   	min-height: 100%;
 }
@@ -20,69 +19,23 @@ body{
 	font-family: 'Roboto', sans-serif;
 	background-color: $light-bg;
 }
-
-/**
- * Section Intro
- */
-#section-headline{
-	position: relative;
-	text-align: left;
-	background-color: $light-bg;
-}
-
-/**
- * Section Slideshow
- */
-#section-slideshow{
-	background-color: $dark-bg;
-	color: $white-color;
-}
-
-#section-headline, #section-feature-highlights {
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-
-/**
- * Section Features
- */
-#section-feature-highlights{
-  	background-color: white;
-}
-#section-feature-details{
-	background-color: white;
-
-}
-.what-we-do-features{
-	text-align: center;
-}
-
-/**
- * Section Download
- */
-#section-download{
-	background-color: $light-bg;
-}
-
-/**
- * Section Community
- */
+#section-slideshow,
 #section-community{
 	background-color: $dark-bg;
 	color: $white-color;
 }
-
-/**
- * Section Events
- */
-#section-events{
-
+#section-headline,
+#section-download{
+	background-color: $light-bg;
 }
-
-/**
- * Section Quotes
- */
-#section-quotes{
+#section-feature-highlights,
+#section-events,
+#section-quotes,
+#section-feature-details{
 	background-color: $white-color;
 }
+#section-headline,
+#section-feature-highlights {
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
