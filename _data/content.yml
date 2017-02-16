@@ -41,6 +41,7 @@ feature_details:
 
   column_left:
     h3: One Platform to...
+    img: http://placehold.it/450x100?text=Illustration-Picture
     items:
       - h4: Develop faster
         p: All-in-one IDE, Templating, bootstrap your project in few minutes, full Angular integration with Backend, Ionic to develop Hybrid Apps.
