@@ -4,6 +4,9 @@
     box-shadow: inset 0px -10px 23px -4px black;
     color: $white-color;
     text-align: center;
+    .embed-video {
+        margin-bottom: 20px;
+    }
     .container {
         &, >div {
             padding: 0;

@@ -40,14 +40,7 @@ a{
 .btn{
 	cursor: pointer;
 }
-.img-responsive{
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
-.img-fluid {
-	margin-bottom: 20px;
-}
+
 .logo {
   max-width: 200px;
 }
@@ -135,9 +128,6 @@ p.title-legend {
  */
 #section-feature-highlights{
   	background-color: white;
-	img {
-		max-height: 40px;
-	}
 }
 #section-feature-details{
 	background-color: white;
