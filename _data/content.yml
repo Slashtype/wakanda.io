@@ -116,3 +116,14 @@ quotes:
 mail_form:
   title: Wakanda 2.0.0 is coming soon!
   p: "Enter your email to be added to the invite list:"
+
+community:
+  - title: Ask questions on Stackoverflow
+    icon: fa fa-stack-overflow
+    url: http://stackoverflow.com/questions/tagged/wakanda
+  - title: Report issues, request new features
+    icon: fa fa-github
+    url: https://github.com/Wakanda/wakanda-issues/issues
+  - title: Read our engineering blog
+    icon: fa fa-rss
+    url: https://blog.wakanda.io/category/developers

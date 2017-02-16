@@ -157,56 +157,9 @@ p.title-legend {
 /**
  * Section Community
  */
-#section-mailing{
-	background-color: $darker-bg;
+#section-community{
+	background-color: $dark-bg;
 	color: $white-color;
-	padding-bottom: 50px;
-	position: relative;
-
-	h2{
-	  color: $white-color;
-	}
-}
-
-.community-link{
-	color: $main-color;
-	display: inline-block;
-	margin-bottom: 20px;
-	width: 100%;
-
-  &:hover,
-  &:focus,
-  &:active{
-    color: $white-color;
-  }
-	.fa{
-		font-size: 35px;
-		margin-right: 10px;
-	}
-  &.highlighted-link{
-    border-radius: 4px;
-    box-shadow: 0 0 0 1px $main-color inset;
-    margin-left: 10px;
-    width: auto;
-
-    .btn{
-    	padding: 0.5rem 0.7rem;
-    }
-    &:hover,
-    &:focus,
-    &:active{
-      box-shadow: 0 0 0 1px $white-color inset;
-    }
-  }
-}
-@media(max-width: 1199px){
-
-	.community-text{
-		text-align: center;
-	}
-	.community-link.highlighted-link{
-		margin-top: 20px;
-	}
 }
 
 /**
